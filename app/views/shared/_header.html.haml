@@ -1,0 +1,12 @@
+#logo
+  %h1 |
+    = link_to 'MIKE ROSE', root_path
+/
+  %ul#nav
+    - if logged_in?
+      %li= link_to 'Dashboard', admin_path
+      %li= link_to "Logout", logout_user_session_path
+    - else
+      %li= link_to 'Register', new_user_path
+      %li= link_to 'Login', new_user_session_path   
+      

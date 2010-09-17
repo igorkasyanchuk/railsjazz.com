@@ -1,0 +1,17 @@
+=rounded_corners($r: 6px)
+  -moz-border-radius: $r
+  -webkit-border-radius: $r
+
+=rounded_buttons
+  +rounded_corners(14px)
+  padding: 5px 10px 5px
+  text-decoration: none
+
+.ok_button
+  background: #e2e2e2
+  color: #646464
+  +rounded_buttons
+
+.ok_button:hover
+  background: #6b8d94
+  color: white

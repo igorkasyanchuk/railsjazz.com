@@ -1,0 +1,139 @@
+@import "960/text"
+
++text
+
+=text-left
+  text-align: left
+
+=text-center
+  text-align: center
+
+=text-right
+  text-align: right
+
+.text_right
+  +text-right
+
+.text_left
+  +text-left
+
+.text_center
+  +text-center
+
+.red_text
+  color: red
+  &:hover
+    color: red
+
+.green_text
+  color: green
+  &:hover
+    color: green
+
+.yellow_text
+  color: yellow
+  &:hover
+    color: yellow
+
+.blue_text
+  color: blue
+  &:hover
+    color: blue
+
+.brown_text
+  color: brown
+  &:hover
+    color: brown
+
+.white_text
+  color: white
+  &:hover
+    color: white
+
+html
+  dl
+    dt
+      font-weight: bold
+    dt, dl
+      padding: 0.3em 0
+
+=small_image_button($name)
+  padding-left: unquote("18px")
+  padding-left: unquote("18px !important")
+  background: url(/images/icons/#{$name}) no-repeat center left
+  font-size: 12px
+
+.add_button
+  +small_image_button(unquote("add.png"))
+
+.edit_button
+  +small_image_button(unquote("application_edit.png"))
+
+.show_button
+  +small_image_button(unquote("application_go.png"))
+
+.delete_button
+  +small_image_button(unquote("application_delete.png"))
+
+.list_button
+  +small_image_button(unquote("table.png"))
+
+.cancel_button
+  +small_image_button(unquote("table_delete.png"))
+
+.roles_button
+  +small_image_button(unquote("shield_go.png"))
+
+.activate_button
+  +small_image_button(unquote("note_add.png"))
+
+.suspend_button
+  +small_image_button(unquote("note_delete.png"))
+
+.restore_button
+  +small_image_button(unquote("note_go.png"))
+
+.projects_button
+  +small_image_button(unquote("page_white_text.png"))
+
+.archive_button
+  +small_image_button(unquote("package_add.png"))
+
+.check_button
+  +small_image_button(unquote("accept.png"))
+
+.discuss_button
+  +small_image_button(unquote("comment_edit.png"))
+
+.close_button
+  +small_image_button(unquote("drive_go.png"))
+
+.view_buttom
+  +small_image_button(unquote("page_go.png"))
+
+.gallery_button
+  +small_image_button(unquote("image_add.png"))
+
+.change_button
+  +small_image_button(unquote("page_white_wrench.png"))
+
+.dashboard_button
+  +small_image_button(unquote("application_home.png"))
+
+.logout_button
+  +small_image_button(unquote("disconnect.png"))
+
+.resources_button
+  +small_image_button(unquote("table_multiple.png"))
+
+.questions_button
+  +small_image_button(unquote("help.png"))
+
+.translations_button
+  +small_image_button(unquote("table_relationship.png"))
+  
+.remove_item_button
+  +small_image_button(unquote("fileclose.png"))  
+  
+.bold_text
+  font-weight: bold  

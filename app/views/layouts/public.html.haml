@@ -1,0 +1,33 @@
+%html
+  %head
+    <title>RailsJazz.com &mdash Ruby, Ruby on Rails Development, outsourcing, HTMl/JS/CSS</title>
+    <meta content="Ruby, Ruby on Rails development for startups, outsourcing." name="description" />
+    <meta content="Ruby, Ruby on Rails development, startups, outsourcing, haml, js, jquery" name="keywords" />    
+    = stylesheet_link_tag 'public'
+    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+  %body
+    #top
+      %h1 RailsJazz.com
+      %h2 ... sound like a good solution
+    #bottom
+      %strong 
+        Ruby, Ruby on Rails development 
+        %br
+        for startups, outsourcing using
+      %ul
+        %li Ruby
+        %li Rails
+        %li Sinatra
+        %li HTML/JS/CSS
+        %li jQuery
+        %li Google Map
+        %li HAML/SASS
+        %li Thinking Sphinx
+        %li SEO
+        %li Great Ideas :)
+      %p
+        = link_to (image_tag 'logov3-hover.png'), 'http://github.com/igorkasyanchuk'
+      %p
+        = link_to (image_tag 'logo_82x23.png'), 'http://www.linkedin.com/in/igorkasyanchuk'
+      %p  
+        = render :partial => '/shared/skype'

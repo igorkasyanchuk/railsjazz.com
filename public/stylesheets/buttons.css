@@ -1,0 +1,15 @@
+/* line 10, ../../app/stylesheets/buttons.sass */
+.ok_button {
+  background: #e2e2e2;
+  color: #646464;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  padding: 5px 10px 5px;
+  text-decoration: none;
+}
+
+/* line 15, ../../app/stylesheets/buttons.sass */
+.ok_button:hover {
+  background: #6b8d94;
+  color: white;
+}

@@ -1,0 +1,126 @@
+@import "base"
+
+$border_for_notice: unquote("1px solid #ccc")
+
+=bordered($color: red)
+  border: unquote("1px solid #{$color}")
+
+=alpha-omega
+  +alpha
+  +omega
+
+#root
+  +grid-system(16)
+  #header
+    +grid-container
+    height: 80px
+    #logo
+      +grid(6)
+      +alpha
+      h1
+        font-size: 2.3em
+    #nav_container
+      +grid(16)
+      +alpha
+      +omega
+      ul#nav
+        +float-right
+        +horizontal-list
+        height: 2em
+        padding-top: 1em
+        li
+          +text-right
+          a
+            font-size: 0.9em
+            padding: 2px 2px
+  #content
+    .container
+      +grid(16)
+    div.flash
+      +grid(15)
+      margin-top: 0.6em
+      margin-bottom: 0.6em
+      +alpha
+      +omega
+      padding: 4px 6px
+      border: $border_for_notice
+      +rounded_corners
+    div.flash.error
+      color: #8a1f11
+      background: #fff6bf
+      border-color: #ffd324
+    div.flash.notice
+      color: #514721
+      background: #fff6bf
+      border-color: #ffd324
+    #admin_menu
+      +grid(16)
+      +alpha
+      +omega
+      padding-top: 0.3em
+      padding-bottom: 0.3em
+      position: relative
+      z-index: 11
+    #admin_section
+      +grid(16)
+      +alpha
+      +omega
+      padding-bottom: 1em
+      h1, h2, h3
+        margin: 0.5em 0
+
+#footer
+  hr
+    margin: 0
+  a
+    font-size: 0.9em
+    padding-top: 4px
+    float: right
+
+html body
+  line-height: 1.5em
+
+.reset_all
+  *
+    padding: 0
+    margin: 0
+    font-size: 100%
+
+ul li.top_border
+  border-top: 1px solid #eeeeee
+
+.font_09
+  font-size: 0.9em
+
+.w_50
+  width: 50%
+  
+hr
+  margin: 5px 0px
+  border-top: 1px dashed #dddddd
+
+.clear
+  clear: both  
+
+.left
+  float: left
+  
+.right
+  float: right
+  
+.block
+  display: block
+  
+th
+  .current
+    padding-right: 20px
+    background-repeat: no-repeat
+    background-position: right center
+  .asc
+    background-image: url(/images/sort-asc1.png)
+  .desc
+    background-image: url(/images/sort-desc1.png)
+    
+    
+html dl
+  margin-top: 0em

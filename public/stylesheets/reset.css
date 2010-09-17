@@ -1,0 +1,48 @@
+/* line 1, ../../app/stylesheets/reset.sass */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 10, ../../app/stylesheets/reset.sass */
+body, html body {
+  line-height: 1.5;
+  color: #222222;
+}
+
+/* line 14, ../../app/stylesheets/reset.sass */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 18, ../../app/stylesheets/reset.sass */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 22, ../../app/stylesheets/reset.sass */
+table, td, th {
+  vertical-align: middle;
+}
+
+/* line 25, ../../app/stylesheets/reset.sass */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 28, ../../app/stylesheets/reset.sass */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 31, ../../app/stylesheets/reset.sass */
+a img {
+  border: none;
+}

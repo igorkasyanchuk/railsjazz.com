@@ -1,0 +1,54 @@
+/* line 3, ../../app/stylesheets/tables.sass */
+table, tr, td, th {
+  border: 1px solid #dddddd;
+}
+
+/* line 6, ../../app/stylesheets/tables.sass */
+table.zebra {
+  vertical-align: baseline;
+  background: transparent;
+  border-collapse: collapse;
+  border: 0 none;
+  margin-bottom: 1.4em;
+  width: 100%;
+  margin: 0.8em 1px;
+}
+/* line 14, ../../app/stylesheets/tables.sass */
+table.zebra th, table.zebra td, table.zebra caption, table.zebra thead {
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #dddddd;
+  border-style: inset;
+}
+/* line 20, ../../app/stylesheets/tables.sass */
+table.zebra thead tr th {
+  font-weight: bold;
+  border: 1px solid #dddddd;
+}
+/* line 24, ../../app/stylesheets/tables.sass */
+table.zebra tr.even td {
+  background: #ececec;
+}
+/* line 27, ../../app/stylesheets/tables.sass */
+table.zebra tr.odd td {
+  background: white;
+}
+/* line 29, ../../app/stylesheets/tables.sass */
+table.zebra tfoot {
+  font-style: italic;
+}
+/* line 31, ../../app/stylesheets/tables.sass */
+table.zebra caption {
+  background: #eeeeee;
+}
+/* line 34, ../../app/stylesheets/tables.sass */
+table.zebra td ol {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* line 39, ../../app/stylesheets/tables.sass */
+table td.table_block {
+  background: #ececec;
+  color: black;
+  font-weight: bold;
+}

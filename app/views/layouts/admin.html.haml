@@ -1,0 +1,21 @@
+= title "#{controller_name.capitalize.humanize}##{action_name.humanize.downcase}"
+
+- content_for :on_ready do
+  == $('.admin_menu .#{controller_name}_menu').addClass('selected');
+    
+- content_for :css do
+  = stylesheet_link_tag 'admin'
+
+= inside_layout 'application' do
+  #admin.container
+    %ul.admin_menu
+      %li.projects_menu= link_to 'Projects', admin_projects_path
+      %li.people_menu= link_to 'People', admin_people_path
+      %li.person_roles_menu= link_to 'Titles', admin_person_roles_path
+      /%li= link_to 'Report', admin_reports_path
+    /
+      %ul.admin_actions
+        %li= link_to 'Add Project', new_admin_project_path, :class => 'add_button'
+        %li= link_to 'Add Person', new_admin_person_path, :class => 'add_button'
+  .container= yield
+  

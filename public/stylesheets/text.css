@@ -1,0 +1,357 @@
+/* line 4, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+body {
+  font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+/* line 6, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+a:focus {
+  outline: 1px dotted invert;
+}
+
+/* line 8, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+hr {
+  border-color: #cccccc;
+  border-style: solid;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+}
+
+/* line 14, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h1 {
+  font-size: 25px;
+}
+
+/* line 16, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h2 {
+  font-size: 23px;
+}
+
+/* line 18, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h3 {
+  font-size: 21px;
+}
+
+/* line 20, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h4 {
+  font-size: 19px;
+}
+
+/* line 22, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h5 {
+  font-size: 17px;
+}
+
+/* line 24, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+h6 {
+  font-size: 15px;
+}
+
+/* line 26, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+ol {
+  list-style: decimal;
+}
+
+/* line 28, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+ul {
+  list-style: square;
+}
+
+/* line 30, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+li {
+  margin-left: 30px;
+}
+
+/* line 32, ../../../../../opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/compass-960-plugin-0.9.13/stylesheets/960/_text.sass */
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 20px;
+}
+
+/* line 14, ../../app/stylesheets/text.sass */
+.text_right {
+  text-align: right;
+}
+
+/* line 17, ../../app/stylesheets/text.sass */
+.text_left {
+  text-align: left;
+}
+
+/* line 20, ../../app/stylesheets/text.sass */
+.text_center {
+  text-align: center;
+}
+
+/* line 23, ../../app/stylesheets/text.sass */
+.red_text {
+  color: red;
+}
+/* line 25, ../../app/stylesheets/text.sass */
+.red_text:hover {
+  color: red;
+}
+
+/* line 28, ../../app/stylesheets/text.sass */
+.green_text {
+  color: green;
+}
+/* line 30, ../../app/stylesheets/text.sass */
+.green_text:hover {
+  color: green;
+}
+
+/* line 33, ../../app/stylesheets/text.sass */
+.yellow_text {
+  color: yellow;
+}
+/* line 35, ../../app/stylesheets/text.sass */
+.yellow_text:hover {
+  color: yellow;
+}
+
+/* line 38, ../../app/stylesheets/text.sass */
+.blue_text {
+  color: blue;
+}
+/* line 40, ../../app/stylesheets/text.sass */
+.blue_text:hover {
+  color: blue;
+}
+
+/* line 43, ../../app/stylesheets/text.sass */
+.brown_text {
+  color: brown;
+}
+/* line 45, ../../app/stylesheets/text.sass */
+.brown_text:hover {
+  color: brown;
+}
+
+/* line 48, ../../app/stylesheets/text.sass */
+.white_text {
+  color: white;
+}
+/* line 50, ../../app/stylesheets/text.sass */
+.white_text:hover {
+  color: white;
+}
+
+/* line 55, ../../app/stylesheets/text.sass */
+html dl dt {
+  font-weight: bold;
+}
+/* line 57, ../../app/stylesheets/text.sass */
+html dl dt, html dl dl {
+  padding: 0.3em 0;
+}
+
+/* line 66, ../../app/stylesheets/text.sass */
+.add_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/add.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 69, ../../app/stylesheets/text.sass */
+.edit_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/application_edit.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 72, ../../app/stylesheets/text.sass */
+.show_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/application_go.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 75, ../../app/stylesheets/text.sass */
+.delete_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/application_delete.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 78, ../../app/stylesheets/text.sass */
+.list_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/table.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 81, ../../app/stylesheets/text.sass */
+.cancel_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/table_delete.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 84, ../../app/stylesheets/text.sass */
+.roles_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/shield_go.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 87, ../../app/stylesheets/text.sass */
+.activate_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/note_add.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 90, ../../app/stylesheets/text.sass */
+.suspend_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/note_delete.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 93, ../../app/stylesheets/text.sass */
+.restore_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/note_go.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 96, ../../app/stylesheets/text.sass */
+.projects_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/page_white_text.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 99, ../../app/stylesheets/text.sass */
+.archive_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/package_add.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 102, ../../app/stylesheets/text.sass */
+.check_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/accept.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 105, ../../app/stylesheets/text.sass */
+.discuss_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/comment_edit.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 108, ../../app/stylesheets/text.sass */
+.close_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/drive_go.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 111, ../../app/stylesheets/text.sass */
+.view_buttom {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/page_go.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 114, ../../app/stylesheets/text.sass */
+.gallery_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/image_add.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 117, ../../app/stylesheets/text.sass */
+.change_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/page_white_wrench.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 120, ../../app/stylesheets/text.sass */
+.dashboard_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/application_home.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 123, ../../app/stylesheets/text.sass */
+.logout_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/disconnect.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 126, ../../app/stylesheets/text.sass */
+.resources_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/table_multiple.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 129, ../../app/stylesheets/text.sass */
+.questions_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/help.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 132, ../../app/stylesheets/text.sass */
+.translations_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/table_relationship.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 135, ../../app/stylesheets/text.sass */
+.remove_item_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/icons/fileclose.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 138, ../../app/stylesheets/text.sass */
+.bold_text {
+  font-weight: bold;
+}

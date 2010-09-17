@@ -1,0 +1,58 @@
+@import "compass"
+@import "compass/utilities/general"
+@import "compass/utilities/links"
+@import "compass/utilities/lists"
+@import "compass/utilities/print"
+@import "compass/utilities/sprites"
+@import "compass/utilities/tables"
+@import "compass/utilities/text"
+@import "grid"
+@import "text"
+@import "reset"
+@import "fonts"
+@import "buttons"
+@import "tables"
+@import "layout"
+
+=attach_footer($footer_height)
+  height: 100%
+  body
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    color: #333333
+    text-align: center
+  #root
+    text-align: left
+    min-height: 100%
+    margin-bottom: -$footer_height
+    +clearfix
+    #root_footer
+      clear: both
+      height: $footer_height
+  #footer
+    text-align: center
+    +grid-system
+    clear: both
+    position: relative
+    height: $footer_height - 25px
+
+$base_color: #887733
+
+html
+  +global-reset
+  +attach_footer(75px)
+  +tag-cloud
+  +fonts
+  font-size: 14px
+
+a
+  +link-colors(#1d75bb, #1d75cc)
+
+.none
+  display: none
+
+dd.body
+  img
+    padding: 5px 6px

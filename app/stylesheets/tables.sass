@@ -1,0 +1,42 @@
+$table_border: 1px solid #dddddd
+
+table, tr, td, th
+  border: $table_border
+
+table.zebra
+  vertical-align: baseline
+  background: transparent
+  border-collapse: collapse
+  border: 0 none
+  margin-bottom: 1.4em
+  width: 100%
+  margin: 0.8em 1px
+  th, td, caption, thead
+    padding: 4px 4px 4px 4px
+    border: $table_border
+    border-style: inset
+  thead
+    tr
+      th
+        font-weight: bold
+        border: $table_border
+  tr.even
+    td
+      background: #ececec
+  tr.odd
+    td
+      background: white
+  tfoot
+    font-style: italic
+  caption
+    background: #eeeeee
+  td
+    ol
+      margin-top: 0.3em
+      margin-bottom: 0.3em
+
+table
+  td.table_block
+    background: #ececec
+    color: black
+    font-weight: bold
