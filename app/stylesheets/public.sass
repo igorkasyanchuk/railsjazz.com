@@ -1,3 +1,7 @@
+$blue = #4279BC
+$light_blue = #4279BC + #222 
+$body_color = #333
+
 *
   margin: 0
   padding: 0
@@ -5,10 +9,9 @@
 body
   margin: 0
   padding: 0
-  background-color: #feffee
   font-family: 'Molengo', Helvetica, Arial, sans-serif
   font-size: 14px
-  color: #000
+  color: $body_color
 
 div#top
   position: absolute
@@ -16,6 +19,7 @@ div#top
   top: 30px
 
 div#bottom
+  font-size: 14px
   text-align: right
   position: absolute
   right: 30px
@@ -34,10 +38,17 @@ img
 h1
   font-size: 108px
   font-weight: normal
+  font-family: 'Lobster', Helvetica, Arial, sans-serif
+  color: $blue
+  text-shadow: 2px 2px 2px #000
+  font-weight: normal
   
 h2
-  font-size: 42px
-  padding-left: 75px
+  font-family: 'Lobster', Helvetica, Arial, sans-serif
+  font-size: 24px
+  padding-left: 235px
+  color: $light_blue
+  font-weight: normal
   
 strong
   font-weight: normal

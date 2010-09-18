@@ -1,65 +1,72 @@
-/* line 1, ../../app/stylesheets/public.sass */
+/* line 9, ../../app/stylesheets/public.sass */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 9, ../../app/stylesheets/public.sass */
+/* line 17, ../../app/stylesheets/public.sass */
 body {
   margin: 0;
   padding: 0;
-  background-color: #feffee;
   font-family: "Molengo", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: black;
+  color: #333333;
 }
 
-/* line 25, ../../app/stylesheets/public.sass */
+/* line 31, ../../app/stylesheets/public.sass */
 div#top {
   position: absolute;
   left: 30px;
   top: 30px;
 }
 
-/* line 35, ../../app/stylesheets/public.sass */
+/* line 41, ../../app/stylesheets/public.sass */
 div#bottom {
+  font-size: 14px;
   text-align: right;
   position: absolute;
   right: 30px;
   bottom: 30px;
 }
-/* line 45, ../../app/stylesheets/public.sass */
+/* line 53, ../../app/stylesheets/public.sass */
 div#bottom ul {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-/* line 51, ../../app/stylesheets/public.sass */
+/* line 59, ../../app/stylesheets/public.sass */
 div#bottom p {
   margin-bottom: 16px;
 }
-/* line 55, ../../app/stylesheets/public.sass */
+/* line 63, ../../app/stylesheets/public.sass */
 div#bottom ul li {
   text-align: right;
 }
 
-/* line 61, ../../app/stylesheets/public.sass */
+/* line 69, ../../app/stylesheets/public.sass */
 img {
   border: 0 none;
 }
 
-/* line 67, ../../app/stylesheets/public.sass */
+/* line 75, ../../app/stylesheets/public.sass */
 h1 {
   font-size: 108px;
   font-weight: normal;
+  font-family: "Lobster", Helvetica, Arial, sans-serif;
+  color: #4279bc;
+  text-shadow: 2px 2px 2px black;
+  font-weight: normal;
 }
 
-/* line 75, ../../app/stylesheets/public.sass */
+/* line 91, ../../app/stylesheets/public.sass */
 h2 {
-  font-size: 42px;
-  padding-left: 75px;
+  font-family: "Lobster", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  padding-left: 235px;
+  color: #649bde;
+  font-weight: normal;
 }
 
-/* line 83, ../../app/stylesheets/public.sass */
+/* line 105, ../../app/stylesheets/public.sass */
 strong {
   font-weight: normal;
   font-size: 16px;
