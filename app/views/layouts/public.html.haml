@@ -6,12 +6,6 @@
     = stylesheet_link_tag 'public'
     <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    = javascript_include_tag 'jquery-1.4.2.min'
-  %script{:type => 'javascript'}
-    $(function() {
-    alert(1);
-    });
-    });
   %body
     = yield
     - if Rails.env == 'production'
