@@ -14,3 +14,5 @@
     });
   %body
     = yield
+    - if Rails.env == 'production'
+      = render :partial => '/shared/ga'
