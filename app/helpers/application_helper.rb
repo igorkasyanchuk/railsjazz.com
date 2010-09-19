@@ -29,5 +29,9 @@ module ApplicationHelper
     direction = column == sort_column && sort_direction == "asc" ? "desc" : "asc"
     link_to title, {:sort => column, :direction => direction}, :class => css_class
   end
+  
+  def w3c_date(date)
+    date.utc.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+  end  
 
 end
