@@ -1,12 +1,11 @@
-#logo
-  %h1 |
-    = link_to 'MIKE ROSE', root_path
-/
+#header.container
+  %h1
+    = link_to "RailsJazz.com", '/'
+  %h2 ...sound like a sweet solution
   %ul#nav
-    - if logged_in?
-      %li= link_to 'Dashboard', admin_path
-      %li= link_to "Logout", logout_user_session_path
-    - else
-      %li= link_to 'Register', new_user_path
-      %li= link_to 'Login', new_user_session_path   
-      
+    %li
+      = link_to 'Blog', page_path('blog')
+      |
+    %li
+      = link_to 'Contact', page_path('contact')
+  .clear

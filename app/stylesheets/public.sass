@@ -1,6 +1,12 @@
-$blue = #4279BC
-$light_blue = #4279BC + #222 
+$main_color = #C00
+$second_color = #000
+$third_color = #640
+$fourth_color = #666
 $body_color = #333
+$font = "12px/1.5em 'Lucida Grande', Tahoma, Arial, Verdana, sans-serif"
+
+@import boxes
+@import grid
 
 *
   margin: 0
@@ -9,48 +15,123 @@ $body_color = #333
 body
   margin: 0
   padding: 0
-  font-family: 'Molengo', Helvetica, Arial, sans-serif
-  font-size: 14px
+  font: $font
   color: $body_color
 
-div#top
-  position: absolute
-  left: 30px
-  top: 30px
-
-div#bottom
-  font-size: 14px
-  text-align: right
-  position: absolute
-  right: 30px
-  bottom: 30px
-  ul
-    margin-top: 16px
-    margin-bottom: 16px
-  p
-    margin-bottom: 16px
-  ul li
-    text-align: right
+div.container
+  width: 800px
+  margin: 0 auto
     
 img
   border: 0 none
-  
-h1
-  font-size: 108px
-  font-weight: normal
-  font-family: 'Lobster', Helvetica, Arial, sans-serif
-  color: $blue
-  text-shadow: 2px 2px 2px #000
-  font-weight: normal
-  
-h2
-  font-family: 'Lobster', Helvetica, Arial, sans-serif
-  font-size: 24px
-  padding-left: 235px
-  color: $light_blue
-  font-weight: normal
-  
+
+#header
+  padding-top: 25px
+  vertical-align: bottom
+  padding-bottom: 25px
+  border-bottom: 1px solid #DDD
+  margin-bottom: 25px
+  position: relative
+  h1
+    position: absolute
+    left: 0px
+    top: 20px
+    font-size: 24px
+    color: $main_color
+    font-weight: bold
+    vertical-align: bottom
+    z-index: 9999
+    a
+      color: $main_color
+      text-decoration: none  
+  h2
+    position: absolute
+    left: 80px
+    top: 25px
+    font-size: 14px
+    padding-left: 5px
+    color: $second_color
+    font-weight: normal
+    vertical-align: bottom
+    padding-top: 13px
+  ul#nav
+    float: right
+    list-style-type: none
+    li
+      float: left
+    a
+      color: $body_color
+      padding-left: 6px
+      padding-right: 4px
+      
 strong
   font-weight: normal
   font-size: 16px
+
+.clear
+  clear: both
   
+#content
+  >h2
+    margin-top: 50px
+  h2.callout
+    font-size: 24px
+    color: $second_color
+    text-align: center
+    line-height: 28px
+  h3.callout
+    font-size: 16px
+    color: $second_color
+    text-align: center
+    line-height: 22px
+    font-weight: normal
+  ol.what
+    padding-left: 50px
+    padding-top: 25px
+    font-size: 18px
+    margin: 0 auto
+    width: 450px
+    line-height: 24px
+    color: $third_color
+    li
+      padding-bottom: 12px
+      .title
+        color: $third_color
+      .about
+        color: $fourth_color      
+        font-size: 14px
+        line-height: 16px
+        
+ul.technologies
+  list-style-type: none
+  width: 400px
+  margin: 0 auto
+  padding-top: 25px
+  padding-bottom: 25px
+  text-align: center
+  li
+    display: inline-block
+    text-align: center
+    margin-right: 6px
+    padding: 1px 2px
+    margin-top: 6px
+    &.red
+      background: #C00
+      color: white
+    &.yellow
+      background: #FFC
+      color: black
+    &.green
+      background: #D0F29D
+      color: black
+    &.brown
+      background: #640
+      color: white  
+      
+.portfolio
+  padding-top: 25px
+  img
+    float: left
+    margin-left: 10px
+    margin-bottom: 10px
+      

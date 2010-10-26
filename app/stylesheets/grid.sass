@@ -1,28 +1,38 @@
-@import "960/grid"
+.w30
+  width: 30%
 
-+global-reset
-
-// The following generates the default grids provided by the css version of 960.gs
-.container_12
-  +grid-system(12)
-
-.container_16
-  +grid-system(16)
-
-// But most compass users prefer to construct semantic layouts like so (two column layout with header and footer):
-
-$ninesixty_columns: 16
-
-.two-column
-  +grid-container
-  #header,
-  #footer,
-  #sidebar,
-  #main-content
-    +grid-unit-base
-  #header, #footer
-    +grid-width(24)
-  #sidebar
-    +grid-width(8)
-  #main-content
-    +grid-width(16)
+.w33
+  width: 33%
+  
+.w50
+  width: 50%
+  
+.w25
+  width: 25%
+  
+.ml1
+  margin-left: 1%
+  
+.mr1
+  margin-right: 1%
+  
+.mrl1
+  margin: 0 1%
+  
+.ml2
+  margin-left: 2%
+  
+.mr2
+  margin-right: 2%
+  
+.mrl2
+  margin: 0 2%
+  
+.ml3
+  margin-left: 3%
+  
+.mr3
+  margin-right: 3%
+  
+.mrl3
+  margin: 0 3%    
