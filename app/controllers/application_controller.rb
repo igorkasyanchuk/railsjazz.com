@@ -1,4 +1,4 @@
 class ApplicationController < ActionController::Base
-  layout 'public'
+  layout 'railsjazz'
   protect_from_forgery
 end

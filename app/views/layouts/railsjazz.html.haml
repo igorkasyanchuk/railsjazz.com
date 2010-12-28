@@ -1,0 +1,35 @@
+!!! XML
+!!!
+
+%html{html_attrs}
+  %head
+    <title>RailsJazz.com - Ruby, Ruby on Rails Development, outsourcing, HTMl/JS/CSS</title>
+    <meta content="Ruby, Ruby on Rails development for startups, outsourcing." name="description" />
+    <meta content="Ruby, Ruby on Rails development, startups, outsourcing, haml, js, jquery" name="keywords" />    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    = stylesheet_link_tag 'railsjazz', 'footer'
+    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
+    <link type="image/x-icon" rel="icon" href="/favicon.ico" />
+  %body
+    #wrap
+      #main
+        #index
+          #header
+            .container
+              = link_to (image_tag 'Logo.png'), root_path
+              #menu
+                = link_to 'Services', services_path, :id => 'services_link'
+                = link_to 'Portfolio', portfolio_path, :id => 'portfolio_link'
+                = link_to 'About us', about_path, :id => 'about_link'
+                /= link_to 'Blog', services_path, :id => 'blog_link'
+                = link_to 'Contact us', contact_path, :id => 'contact_link'
+          .container
+            #content= yield
+    #footer
+      .container
+        = link_to 'skype', 'skype:igorkasyanchuk?chat', :id => 'skype_link'
+        = mail_to 'hi@railsjazz.com', {}, :id => 'email_link'
+        %span.copy 
+          &copy; RailsJazz.com
+          %br
+          All right reserved.

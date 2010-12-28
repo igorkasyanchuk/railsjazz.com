@@ -1,0 +1,41 @@
+=rounded_corners($r: 6px)
+  -moz-border-radius: $r
+  -webkit-border-radius: $r
+
+=rounded_buttons
+  +rounded_corners(14px)
+  padding: 5px 10px 5px
+  text-decoration: none
+
+.ok_button
+  background: #e2e2e2
+  color: #646464
+  +rounded_buttons
+
+.ok_button:hover
+  background: #6b8d94
+  color: white
+
+=image_button($w,$h,$image)
+  color: red
+  width: #{$w}px
+  height: #{$h}px
+  display: inline-block
+  text-indent: -9999px
+  background: url("/images/#{$image}") 0px 0px no-repeat
+  color: transparent
+  border-style: none
+  border-width: 0
+  line-height: 0px !important
+  font-size: 0px
+  overflow: hidden
+  vertical-align: middle
+  *padding-left: 1000px
+  &.active
+    background-position: 0px -#{$h}px
+  &.inactive
+    background-position: 0px #{$h}px
+  &:hover
+    background-position: 0px -#{$h}px
+  &.disable:hover
+    background-position: 0px #{$h}px

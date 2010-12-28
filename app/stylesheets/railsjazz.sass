@@ -1,0 +1,96 @@
+@import "buttons"
+
+$red_color: #ae101f
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  font-weight: inherit
+  font-style: inherit
+  font-family: inherit
+  vertical-align: baseline
+
+body
+  background: #ae101f
+  font-family: Tahoma
+  font-size: 12px
+
+#header
+  background: transparent url(/images/head_1628x326.png) center top repeat-x
+  height: 326px
+  width: 100%
+  
+.container  
+  position: relative
+  width: 930px
+  height: 60px
+  padding-right: 30px
+  margin: 0 auto
+
+#menu
+  position: absolute
+  //right: 136px
+  right: 80px
+  top: 106px
+  color: white
+  z-index: 500
+  
+#content
+  width: 930px
+  margin: 0 auto
+  position: absolute
+  top: -100px
+  z-index: 1000
+  
+#featured_projects
+  background: transparent url(/images/featured.png) center top repeat-x
+  width: 446px
+  height: 126px
+  z-index: 800
+  position: absolute
+  right: 0
+  top: -70px
+  
+#featured_projects_list
+  border: 2px solid 1
+  position: absolute
+  top: 5px
+  width: 100%
+  height: 300px
+  z-index: 1500
+
+#menu a
+  margin-left: 18px  
+  
+#services_link  
+  +image_button(101,18,"services.png")
+
+#portfolio_link
+  +image_button(119,18,"portfolio.png")
+  
+#about_link
+  +image_button(106,18,"about.png")
+
+#blog_link
+  +image_button(59,18,"blog.png")
+
+#contact_link
+  +image_button(138,18,"contact.png")
+  
+#skype_link  
+  +image_button(127,58,"skype_both.png")
+  position: absolute
+  top: 60px
+
+#email_link
+  +image_button(165,48,"mail_both.png")
+  position: absolute
+  top: 100px
+  left: 60px  
+  
+span.copy
+  display: block
+  position: absolute
+  top: 170px  
+  color: $red_color
