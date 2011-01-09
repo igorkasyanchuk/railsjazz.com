@@ -1,5 +1,10 @@
 = error_messages_for :project
 
-= simple_form_for([:admin, @project]) do |f|
-  = f.input :name
+= simple_form_for([:admin, @project], :html => { :multipart => true }) do |f|
+  = f.input :title
+  = f.input :description, :input_html => {:rows => 20, :cols => 80}
+  = f.input :image, :label => "Full-size Main Image"
+  = f.input :preview_image, :label => "Small preview (for home page)"
+  = f.input :featured
+  = f.input :project_category_id, :as => :select, :collection => ProjectCategory.all
   = f.submit f.object.new_record? ? 'Create' : "Update"

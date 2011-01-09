@@ -10,16 +10,18 @@ table.zebra
   border: 0 none
   margin-bottom: 1.4em
   width: 100%
-  margin: 0.8em 1px
+  margin: 12px 1px
+  font-size: 12px
   th, td, caption, thead
     padding: 4px 4px 4px 4px
     border: $table_border
     border-style: inset
-  thead
+  thead, th
     tr
       th
         font-weight: bold
         border: $table_border
+        background: #ECECEC
   tr.even
     td
       background: #ececec
@@ -34,9 +36,16 @@ table.zebra
     ol
       margin-top: 0.3em
       margin-bottom: 0.3em
+  tr
+    th
+      font-weight: bold
 
 table
   td.table_block
     background: #ececec
     color: black
     font-weight: bold
+    
+table.vtop    
+  tr td
+    vertical-align: top

@@ -10,11 +10,31 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
   font-style: inherit
   font-family: inherit
   vertical-align: baseline
+  
+p
+  font-size: 12px
+  line-height: 18px  
+  margin-bottom: 12px
+
+.notice
+  color: green
+  
+.errors
+  color: red
 
 body
   background: #ae101f
   font-family: Tahoma
   font-size: 12px
+  
+.left
+  float: left
+
+.right
+  float: right    
+  
+.clear
+  clear: both  
 
 #header
   background: transparent url(/images/head_1628x326.png) center top repeat-x
@@ -24,22 +44,26 @@ body
 .container  
   position: relative
   width: 930px
-  height: 60px
   padding-right: 30px
   margin: 0 auto
 
 #menu
   position: absolute
-  //right: 136px
-  right: 80px
+  right: 110px
   top: 106px
   color: white
   z-index: 500
+  a
+    margin-left: 50px 
+  
+#logo
+  position: absolute
+  left: -12px  
   
 #content
   width: 930px
   margin: 0 auto
-  position: absolute
+  position: relative
   top: -100px
   z-index: 1000
   
@@ -54,14 +78,10 @@ body
   
 #featured_projects_list
   border: 2px solid 1
-  position: absolute
+  position: relative
   top: 5px
   width: 100%
-  height: 300px
   z-index: 1500
-
-#menu a
-  margin-left: 18px  
   
 #services_link  
   +image_button(101,18,"services.png")
@@ -94,3 +114,8 @@ span.copy
   position: absolute
   top: 170px  
   color: $red_color
+  
+.project_preview_frame
+  float: left
+  margin-left: 12px  
+  margin-bottom: 12px

@@ -1,12 +1,10 @@
 %html
   %head
-    == <title>#{(yield :title) || 'TMT'} &mdash Track your time, expenses and project staff with TMT.</title> 
-    = stylesheet_link_tag 'flick/jquery-ui-1.8.4.custom', 'uniform.default', 'application', 'formtastic', 'formtastic_changes' 
+    %title= yield :title
+    = stylesheet_link_tag 'railsjazz', 'admin', 'footer'
     = yield :css
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    = javascript_include_tag 'jquery-1.4.2.min', 'jquery-ui-1.8.4.custom.min', 'rails.jquery', 'jquery.uniform.min', 'jquery.gvChart-0.1', 'application'
     = csrf_meta_tag
-    = yield :map
+    = javascript_include_tag 'jquery-1.4.4.min'
     %script{:type => 'text/javascript', :charset => 'utf-8'}
       $(document).ready(function() {
       = yield :on_ready

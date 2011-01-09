@@ -16,15 +16,13 @@
         #index
           #header
             .container
-              = link_to (image_tag 'Logo.png'), root_path
+              = link_to (image_tag 'Logo.png', :id => 'logo'), root_path
               #menu
-                = link_to 'Services', services_path, :id => 'services_link'
                 = link_to 'Portfolio', portfolio_path, :id => 'portfolio_link'
                 = link_to 'About us', about_path, :id => 'about_link'
                 /= link_to 'Blog', services_path, :id => 'blog_link'
                 = link_to 'Contact us', contact_path, :id => 'contact_link'
-          .container
-            #content= yield
+          #content= yield
     #footer
       .container
         = link_to 'skype', 'skype:igorkasyanchuk?chat', :id => 'skype_link'

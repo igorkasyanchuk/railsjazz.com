@@ -6,5 +6,20 @@
 .clear
 
 %p
-  = link_to "All Projects", [:admin, :projects], :class => 'index_button'
+  = @project.featured ? "Featured" : "Normal"
+
+%p
+  %strong= @project.project_category.name
+
+%p
+  %i= @project.description
+  
+%p
+  = image_tag @project.image.url
+  
+%p
+  = image_tag @project.preview_image.url  
+
+%p
+  = link_to "View All Projects", [:admin, :projects], :class => 'index_button'
   

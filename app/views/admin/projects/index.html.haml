@@ -7,14 +7,18 @@
 %table.zebra.w50
   %tr
     %th Name
+    %th Category
+    %th Featured
     %th Actions
   - @projects.each do |project|
     %tr{ :class => cycle(:odd, :even)}
       %td= project.title
+      %td= project.project_category.name
+      %td= project.featured ? "Featured" : "Normal"
       %td
         = link_to 'show', [:admin, project], :class => 'show_button'
         = link_to 'edit', [:edit, :admin, project], :class => 'edit_button'
         = link_to 'remove', [:admin, project], :method => :delete, :confirm => 'Are you sure?', :class => 'delete_button'
   %tr
-    %td{:colspan => 2}
+    %td{:colspan => 4}
       %strong Total: #{Project.count}

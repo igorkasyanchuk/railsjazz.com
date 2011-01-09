@@ -1,11 +1,158 @@
-/* line 7, ../../app/stylesheets/admin.sass */
-ul.admin_menu {
+/* line 3, ../../app/stylesheets/_simple_form.sass */
+.simple_form label {
+  margin: 2px 0;
+  display: block;
+  color: #333333;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+/* line 19, ../../app/stylesheets/_simple_form.sass */
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+/* line 27, ../../app/stylesheets/_simple_form.sass */
+.simple_form div.boolean label, .simple_form div.boolean input {
+  vertical-align: middle;
+}
+/* line 33, ../../app/stylesheets/_simple_form.sass */
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  margin: 0;
+  display: inline;
+}
+/* line 41, ../../app/stylesheets/_simple_form.sass */
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+/* line 49, ../../app/stylesheets/_simple_form.sass */
+.simple_form .error {
+  font-size: 11px;
+  color: #dd0000;
+  display: block;
+}
+/* line 59, ../../app/stylesheets/_simple_form.sass */
+.simple_form .hint {
+  font-size: 11px;
+  color: #555555;
+  display: block;
+  font-style: italic;
+}
+/* line 71, ../../app/stylesheets/_simple_form.sass */
+.simple_form input.text, .simple_form input.string, .simple_form input.password, .simple_form textarea, .simple_form select {
+  background: white;
+  border: 1px solid #dddddd;
+  padding: 3px 4px;
+  font-size: 12px;
+  line-height: 14px;
+}
+/* line 83, ../../app/stylesheets/_simple_form.sass */
+.simple_form input.text:hover, .simple_form input.text:focus, .simple_form input.string:hover, .simple_form input.string:focus, .simple_form input.password:hover, .simple_form input.password:focus, .simple_form textarea:hover, .simple_form textarea:focus, .simple_form select:hover, .simple_form select:focus {
+  border: 1px solid #cccccc;
+}
+/* line 89, ../../app/stylesheets/_simple_form.sass */
+.simple_form abbr {
+  color: red;
+  text-decoration: none;
+  border-bottom: 0 none;
+}
+
+/* line 3, ../../app/stylesheets/tables.sass */
+table, tr, td, th {
+  border: 1px solid #dddddd;
+}
+
+/* line 6, ../../app/stylesheets/tables.sass */
+table.zebra {
+  vertical-align: baseline;
+  background: transparent;
+  border-collapse: collapse;
+  border: 0 none;
+  margin-bottom: 1.4em;
+  width: 100%;
+  margin: 12px 1px;
+  font-size: 12px;
+}
+/* line 15, ../../app/stylesheets/tables.sass */
+table.zebra th, table.zebra td, table.zebra caption, table.zebra thead {
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #dddddd;
+  border-style: inset;
+}
+/* line 21, ../../app/stylesheets/tables.sass */
+table.zebra thead tr th, table.zebra th tr th {
+  font-weight: bold;
+  border: 1px solid #dddddd;
+  background: #ececec;
+}
+/* line 26, ../../app/stylesheets/tables.sass */
+table.zebra tr.even td {
+  background: #ececec;
+}
+/* line 29, ../../app/stylesheets/tables.sass */
+table.zebra tr.odd td {
+  background: white;
+}
+/* line 31, ../../app/stylesheets/tables.sass */
+table.zebra tfoot {
+  font-style: italic;
+}
+/* line 33, ../../app/stylesheets/tables.sass */
+table.zebra caption {
+  background: #eeeeee;
+}
+/* line 36, ../../app/stylesheets/tables.sass */
+table.zebra td ol {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+/* line 40, ../../app/stylesheets/tables.sass */
+table.zebra tr th {
+  font-weight: bold;
+}
+
+/* line 44, ../../app/stylesheets/tables.sass */
+table td.table_block {
+  background: #ececec;
+  color: black;
+  font-weight: bold;
+}
+
+/* line 50, ../../app/stylesheets/tables.sass */
+table.vtop tr td {
+  vertical-align: top;
+}
+
+/* line 13, ../../app/stylesheets/admin.sass */
+a {
+  color: black;
+}
+/* line 17, ../../app/stylesheets/admin.sass */
+a:hover, a:visited {
+  color: black;
+}
+
+/* line 23, ../../app/stylesheets/admin.sass */
+#content {
+  position: relative;
+  top: 0;
+}
+
+/* line 31, ../../app/stylesheets/admin.sass */
+#footer {
+  display: none;
+}
+
+/* line 37, ../../app/stylesheets/admin.sass */
+ul#admin_nav {
   float: left;
   margin-left: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
-/* line 13, ../../app/stylesheets/admin.sass */
-ul.admin_menu li {
-  font-size: 18px;
+/* line 47, ../../app/stylesheets/admin.sass */
+ul#admin_nav li {
+  font-size: 14px;
   float: left;
   list-style-type: none;
   margin: 3px 16px 3px 0px;
@@ -13,288 +160,51 @@ ul.admin_menu li {
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
 }
-/* line 29, ../../app/stylesheets/admin.sass */
-ul.admin_menu li:hover, ul.admin_menu li.selected {
+/* line 63, ../../app/stylesheets/admin.sass */
+ul#admin_nav li:hover, ul#admin_nav li.selected {
   background: #ffde01;
 }
 
-/* line 35, ../../app/stylesheets/admin.sass */
+/* line 69, ../../app/stylesheets/admin.sass */
+.container {
+  height: auto;
+}
+
+/* line 75, ../../app/stylesheets/admin.sass */
 .container table {
   width: 100%;
 }
 
-/* line 41, ../../app/stylesheets/admin.sass */
+/* line 81, ../../app/stylesheets/admin.sass */
 .container table {
   border: 2px solid #dddddd;
 }
-/* line 45, ../../app/stylesheets/admin.sass */
+/* line 85, ../../app/stylesheets/admin.sass */
 .container table tr th {
   background: #dddddd;
   color: black;
   font-weight: bold;
   font-size: 16px;
 }
-/* line 55, ../../app/stylesheets/admin.sass */
+/* line 95, ../../app/stylesheets/admin.sass */
 .container table tr th, .container table tr td {
   padding: 3px 4px;
 }
 
-/* line 63, ../../app/stylesheets/admin.sass */
-ul.admin_actions {
-  float: right;
-}
-/* line 67, ../../app/stylesheets/admin.sass */
-ul.admin_actions li {
-  float: left;
-  font-size: 12px;
-  list-style-type: none;
-  padding: 3px 8px 3px 0px;
-}
-
-/* line 79, ../../app/stylesheets/admin.sass */
-.notes {
-  padding-bottom: 16px;
-}
-/* line 83, ../../app/stylesheets/admin.sass */
-.notes .note {
-  margin-bottom: 6px;
-  border-bottom: 1px solid #ececec;
-  border-top: 1px solid #ececec;
-}
-/* line 91, ../../app/stylesheets/admin.sass */
-.notes .note .note_date {
-  float: left;
-  width: 24%;
-  padding-right: 1%;
-  font-size: 12px;
-}
 /* line 101, ../../app/stylesheets/admin.sass */
-.notes .note .note_date .date {
-  font-weight: bold;
-}
-/* line 105, ../../app/stylesheets/admin.sass */
-.notes .note .message {
-  float: left;
-  width: 64%;
-}
-/* line 111, ../../app/stylesheets/admin.sass */
-.notes .note .controls {
-  float: left;
-  width: 10%;
+body {
+  background: white;
 }
 
-/* line 119, ../../app/stylesheets/admin.sass */
-.expenses {
-  padding-bottom: 16px;
-}
-/* line 123, ../../app/stylesheets/admin.sass */
-.expenses .expense {
-  margin-bottom: 6px;
-  border-bottom: 1px solid #ececec;
-  border-top: 1px solid #ececec;
-}
-/* line 131, ../../app/stylesheets/admin.sass */
-.expenses .expense .expense_date {
-  float: left;
-  width: 24%;
-  padding-right: 1%;
-  font-size: 12px;
-}
-/* line 141, ../../app/stylesheets/admin.sass */
-.expenses .expense .expense_date .date {
-  font-weight: bold;
-}
-/* line 145, ../../app/stylesheets/admin.sass */
-.expenses .expense .message {
-  float: left;
-  width: 54%;
-}
-/* line 151, ../../app/stylesheets/admin.sass */
-.expenses .expense .controls {
-  float: left;
-  width: 10%;
-}
-/* line 157, ../../app/stylesheets/admin.sass */
-.expenses .expense .amount {
-  float: left;
-  width: 10%;
-}
-/* line 163, ../../app/stylesheets/admin.sass */
-.expenses .expense .amount_total {
-  margin-left: 25%;
-}
-
-/* line 169, ../../app/stylesheets/admin.sass */
-.own_hours {
-  padding-bottom: 16px;
-}
-/* line 173, ../../app/stylesheets/admin.sass */
-.own_hours .own_hour {
-  margin-bottom: 6px;
-  border-bottom: 1px solid #ececec;
-  border-top: 1px solid #ececec;
-}
-/* line 181, ../../app/stylesheets/admin.sass */
-.own_hours .own_hour .own_hour_date {
-  float: left;
-  width: 24%;
-  padding-right: 1%;
-  font-size: 12px;
-}
-/* line 191, ../../app/stylesheets/admin.sass */
-.own_hours .own_hour .own_hour_date .date {
-  font-weight: bold;
-}
-/* line 195, ../../app/stylesheets/admin.sass */
-.own_hours .own_hour .controls {
-  float: left;
-  width: 10%;
-}
-/* line 201, ../../app/stylesheets/admin.sass */
-.own_hours .own_hour .hours_count {
-  float: left;
-  width: 24%;
-}
-/* line 207, ../../app/stylesheets/admin.sass */
-.own_hours .own_hour .description {
-  float: left;
-  width: 40%;
-}
-/* line 213, ../../app/stylesheets/admin.sass */
-.own_hours .own_hour .hours_count_total {
-  margin-left: 25%;
-}
-
-/* line 219, ../../app/stylesheets/admin.sass */
-.staff {
-  padding-bottom: 16px;
-}
-/* line 223, ../../app/stylesheets/admin.sass */
-.staff .person {
-  margin-bottom: 6px;
-  border-bottom: 1px solid #ececec;
-  border-top: 1px solid #ececec;
-}
-/* line 231, ../../app/stylesheets/admin.sass */
-.staff .person .person_date {
-  float: left;
-  width: 24%;
-  padding-right: 1%;
-  font-size: 12px;
-}
-/* line 241, ../../app/stylesheets/admin.sass */
-.staff .person .person_date .date {
-  font-weight: bold;
-}
-/* line 245, ../../app/stylesheets/admin.sass */
-.staff .person .person_name {
-  float: left;
-  width: 19%;
-}
-/* line 251, ../../app/stylesheets/admin.sass */
-.staff .person .person_description {
-  float: left;
-  width: 23%;
-}
-/* line 257, ../../app/stylesheets/admin.sass */
-.staff .person .controls {
-  float: left;
-  width: 5%;
-}
-/* line 263, ../../app/stylesheets/admin.sass */
-.staff .person .hours_count {
-  float: left;
-  width: 6%;
-}
-/* line 269, ../../app/stylesheets/admin.sass */
-.staff .person .amount {
-  float: left;
-  width: 10%;
-}
-/* line 275, ../../app/stylesheets/admin.sass */
-.staff .person .hourly_rate {
-  float: left;
-  width: 15%;
-}
-/* line 281, ../../app/stylesheets/admin.sass */
-.staff .person .hours_total {
-  margin-left: 24%;
-  width: 15%;
-}
-
-/* line 289, ../../app/stylesheets/admin.sass */
+/* line 107, ../../app/stylesheets/admin.sass */
 .add {
-  font-size: 1.4em;
+  font-size: 12px;
   font-weight: bold;
-  margin-top: 16px;
-  margin-right: 36px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
   padding: 3px;
   background: #ffff34;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
-}
-
-/* line 309, ../../app/stylesheets/admin.sass */
-span.info {
-  display: inline-block;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  font-size: 10px;
-  padding: 1px;
-  background: #aaaaaa;
-  color: white;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-}
-
-/* line 333, ../../app/stylesheets/admin.sass */
-table.projects tr td, table.projects tr th {
-  padding: 6px 4px;
-}
-
-/* line 339, ../../app/stylesheets/admin.sass */
-.summary {
-  background: #ececec;
-  font-style: italic;
-}
-
-/* line 347, ../../app/stylesheets/admin.sass */
-.project_status {
-  padding: 2px 4px;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-}
-/* line 355, ../../app/stylesheets/admin.sass */
-.project_status.red {
-  background: red;
-  color: white;
-}
-/* line 361, ../../app/stylesheets/admin.sass */
-.project_status.green {
-  background: green;
-  color: white;
-}
-/* line 367, ../../app/stylesheets/admin.sass */
-.project_status.yellow {
-  background: yellow;
-  color: black;
-}
-
-/* line 375, ../../app/stylesheets/admin.sass */
-#chart_div {
-  -moz-border-radius: 10px 10px 10px 10px;
-  border: 2px solid white;
-  margin: 0px auto auto;
-}
-
-/* line 385, ../../app/stylesheets/admin.sass */
-table.table_layout {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  overflow: hidden;
-}
-/* line 395, ../../app/stylesheets/admin.sass */
-table.table_layout tr td {
-  vertical-align: top;
 }

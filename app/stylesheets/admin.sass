@@ -1,11 +1,28 @@
+@import "simple_form"
+@import "tables"
+
 $menu_color: #FFDE01
 $button_color: $menu_color + #333
 
-ul.admin_menu
-  :float left
-  :margin-left 0
+a
+  color: black
+  &:hover, &:visited
+    color: black
+
+#content
+  position: relative  
+  top: 0
+  
+#footer
+  display: none  
+
+ul#admin_nav
+  float: left
+  margin-left: 0
+  padding-top: 8px
+  padding-bottom: 8px
   li
-    font-size: 18px
+    font-size: 14px
     float: left
     list-style-type: none
     margin: 3px 16px 3px 0px
@@ -14,6 +31,9 @@ ul.admin_menu
     -webkit-border-radius: 12px
     &:hover, &.selected
       background: #FFDE01
+      
+.container
+  height: auto      
 
 .container table
   width: 100%
@@ -26,174 +46,18 @@ ul.admin_menu
     font-weight: bold
     font-size: 16px
   tr th, tr td
-    padding: 3px 4px  
+    padding: 3px 4px
     
-    
-ul.admin_actions
-  float: right
-  li
-    float: left
-    font-size: 12px
-    list-style-type: none
-    padding: 3px 8px 3px 0px
-
-.notes
-  padding-bottom: 16px
-  .note
-    margin-bottom: 6px
-    border-bottom: 1px solid #ececec
-    border-top: 1px solid #ececec
-    .note_date
-      float: left
-      width: 24%
-      padding-right: 1%
-      font-size: 12px
-      .date
-        font-weight: bold
-    .message
-      float: left
-      width: 64%
-    .controls
-      float: left
-      width: 10%      
-      
-.expenses
-  padding-bottom: 16px
-  .expense
-    margin-bottom: 6px
-    border-bottom: 1px solid #ececec
-    border-top: 1px solid #ececec
-    .expense_date
-      float: left
-      width: 24%
-      padding-right: 1%
-      font-size: 12px
-      .date
-        font-weight: bold
-    .message
-      float: left
-      width: 54%
-    .controls
-      float: left
-      width: 10%
-    .amount
-      float: left
-      width: 10%
-    .amount_total
-      margin-left: 25%
-      
-.own_hours
-  padding-bottom: 16px
-  .own_hour
-    margin-bottom: 6px
-    border-bottom: 1px solid #ececec
-    border-top: 1px solid #ececec
-    .own_hour_date
-      float: left
-      width: 24%
-      padding-right: 1%
-      font-size: 12px
-      .date
-        font-weight: bold
-    .controls
-      float: left
-      width: 10%
-    .hours_count
-      float: left
-      width: 24%
-    .description
-      float: left
-      width: 40%
-    .hours_count_total
-      margin-left: 25%
-      
-.staff
-  padding-bottom: 16px
-  .person
-    margin-bottom: 6px
-    border-bottom: 1px solid #ececec
-    border-top: 1px solid #ececec
-    .person_date
-      float: left
-      width: 24%
-      padding-right: 1%
-      font-size: 12px
-      .date
-        font-weight: bold
-    .person_name
-      float: left
-      width: 19%
-    .person_description
-      float: left
-      width: 23%
-    .controls
-      float: left
-      width: 5%
-    .hours_count
-      float: left
-      width: 6%
-    .amount
-      float: left
-      width: 10%
-    .hourly_rate
-      float: left
-      width: 15%
-    .hours_total
-      margin-left: 24%
-      width: 15%
-      
+body
+  background: white
+  
 .add
-  font-size: 1.4em
+  font-size: 12px
   font-weight: bold
-  margin-top: 16px
-  margin-right: 36px
+  margin-top: 8px
+  margin-bottom: 8px
+  margin-right: 16px
   padding: 3px
   background: $button_color
   -moz-border-radius: 12px
-  -webkit-border-radius: 12px
-  
-span.info
-  display: inline-block
-  margin-top: 3px
-  margin-bottom: 3px
-  font-size: 10px
-  padding: 1px
-  background: #aaa
-  color: white
-  -moz-border-radius: 2px
-  -webkit-border-radius: 2px
-  
-table.projects
-  tr td, tr th
-    padding: 6px 4px
-    
-.summary
-  background: #ECECEC
-  font-style: italic
-  
-.project_status
-  padding: 2px 4px
-  -moz-border-radius: 12px
-  -webkit-border-radius: 12px
-  &.red
-    background: red
-    color: white
-  &.green
-    background: green
-    color: white
-  &.yellow
-    background: yellow
-    color: black
-    
-#chart_div    
-  -moz-border-radius: 10px 10px 10px 10px
-  border: 2px solid white
-  margin: 0px auto auto
-  
-table.table_layout
-  padding: 0
-  margin: 0
-  border: 0
-  overflow: hidden
-  tr td
-    vertical-align: top
+  -webkit-border-radius: 12px  
