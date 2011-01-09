@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    RedCloth (4.2.3)
     abstract (1.0.0)
     actionmailer (3.0.3)
       actionpack (= 3.0.3)
@@ -29,26 +30,54 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     arel (2.0.6)
+    attribute_normalizer (0.3.1)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
+    babosa (0.2.0)
     builder (2.1.2)
     compass (0.10.6)
       haml (>= 3.0.4)
     compass-960-plugin (0.10.0)
       compass (>= 0.10.0)
+    dynamic_form (1.1.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
-    formtastic (1.2.1)
-      actionpack (>= 2.3.7)
-      activesupport (>= 2.3.7)
-      i18n (>= 0.4.0)
+    factory_girl (1.3.2)
+    factory_girl_rails (1.0)
+      factory_girl (~> 1.3)
+      rails (>= 3.0.0.beta4)
+    faker (0.3.1)
+    friendly_id (3.1.8)
+      babosa (~> 0.2.0)
     haml (3.0.25)
+    has_scope (0.5.0)
     high_voltage (0.9.2)
+    hoptoad_notifier (2.3.12)
+      activesupport
+      builder
     i18n (0.5.0)
+    inherited_resources (1.1.2)
+      has_scope (~> 0.5.0)
+      responders (~> 0.6.0)
     mail (2.2.12)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_where (0.9.9.2)
+      activerecord (~> 3.0.2)
+      activesupport (~> 3.0.2)
+      arel (~> 2.0.2)
     mime-types (1.16)
+    mocha (0.9.10)
+      rake
+    nokogiri (1.4.4)
+    paperclip (2.3.6)
+      activerecord
+      activesupport
+    pg (0.9.0)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -69,22 +98,56 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
+    recaptcha (0.3.0)
+    redgreen (1.2.2)
+    responders (0.6.2)
+    shoulda (2.11.3)
+    simple_form (1.3.0)
+      rails (~> 3.0.0)
     sqlite3-ruby (1.3.2)
     thor (0.14.6)
+    timecop (0.3.5)
+    tlsmail (0.0.1)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
-    will_paginate (2.3.15)
+    webrat (0.7.2)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
+    will_paginate (3.0.pre2)
+    xml-simple (1.0.12)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  RedCloth
+  attribute_normalizer
+  aws-s3
   compass
   compass-960-plugin
-  formtastic
+  dynamic_form
+  factory_girl_rails
+  faker
+  friendly_id (~> 3.1)
   haml
+  has_scope (= 0.5.0)
   high_voltage
+  hoptoad_notifier
+  inherited_resources (= 1.1.2)
+  meta_where
+  mocha
+  paperclip (= 2.3.6)
+  pg
   rails (= 3.0.3)
+  recaptcha
+  redgreen
+  responders (= 0.6.2)
+  shoulda
+  simple_form
   sqlite3-ruby
-  will_paginate
+  timecop
+  tlsmail
+  webrat
+  will_paginate (~> 3.0.pre2)

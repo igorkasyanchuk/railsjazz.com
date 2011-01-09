@@ -1,0 +1,10 @@
+= title @project_category.title
+
+%h1.left #{@project_category.title}
+.add.right
+  = link_to "Edit", [:edit, :admin, @project_category], :class => 'edit_button'  
+.clear
+
+%p
+  = link_to "All Project Categories", [:admin, :project_categories], :class => 'index_button'
+  

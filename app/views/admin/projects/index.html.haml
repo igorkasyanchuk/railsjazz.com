@@ -1,0 +1,20 @@
+= title "Manage Projects"
+
+.add.right
+  = link_to "Add Project", [:new, :admin, :project], :class => 'add_button'
+.clear  
+
+%table.zebra.w50
+  %tr
+    %th Name
+    %th Actions
+  - @projects.each do |project|
+    %tr{ :class => cycle(:odd, :even)}
+      %td= project.title
+      %td
+        = link_to 'show', [:admin, project], :class => 'show_button'
+        = link_to 'edit', [:edit, :admin, project], :class => 'edit_button'
+        = link_to 'remove', [:admin, project], :method => :delete, :confirm => 'Are you sure?', :class => 'delete_button'
+  %tr
+    %td{:colspan => 2}
+      %strong Total: #{Project.count}

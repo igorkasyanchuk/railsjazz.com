@@ -7,5 +7,14 @@ RailsjazzCom::Application.routes.draw do
   match '/blog' => 'home#blog' 
   match '/contact' => 'home#contact' 
   
+  namespace :admin do
+    match '/', :to => 'dashboard#welcome'
+    resources :project_categories
+    resources :contacts, :only => [:index, :destroy]
+    resources :projects do
+      resources :screenshots
+    end
+  end  
+
   match "/sitemap.xml" , :controller => "sitemap", :action => "sitemap", :format => 'xml' 
 end

@@ -1,0 +1,10 @@
+= title "Contact us | #{SEO_TITLE_SHORT}"
+= description "Contact us #{SEO_TITLE_SHORT}"
+
+= no_index_me
+
+%h1 Contact us
+
+= simple_form_for @contact do |f|
+  = f.error_messages
+  = render :partial => 'form', :locals => { :f => f }

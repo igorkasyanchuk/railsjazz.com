@@ -1,0 +1,20 @@
+= title "Manage Project Categories"
+
+.add.right
+  = link_to "Add Project Category", [:new, :admin, :project_category], :class => 'add_button'
+.clear  
+
+%table.zebra.w50
+  %tr
+    %th Name
+    %th Actions
+  - @project_categories.each do |project_category|
+    %tr{ :class => cycle(:odd, :even)}
+      %td= project_category.name
+      %td
+        = link_to 'show', [:admin, project_category], :class => 'show_button'
+        = link_to 'edit', [:edit, :admin, project_category], :class => 'edit_button'
+        = link_to 'remove', [:admin, project_category], :method => :delete, :confirm => 'Are you sure?', :class => 'delete_button'
+  %tr
+    %td{:colspan => 2}
+      %strong Total: #{ProjectCategory.count}

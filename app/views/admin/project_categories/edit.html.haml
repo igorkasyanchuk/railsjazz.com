@@ -1,0 +1,7 @@
+= title "Edit: #{@project_category.name}"
+
+%h1.left== Edit: #{@project_category.name}
+.add.right
+  = link_to 'Back', [:admin, :project_categories], :class => 'cancel_button'
+.clear
+= render 'form'

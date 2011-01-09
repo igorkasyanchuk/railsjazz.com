@@ -1,0 +1,15 @@
+%ul#admin_nav
+  %li.locations_menu= link_to 'Locations', admin_locations_path
+  %li.reviews_menu= link_to 'Reviews', admin_reviews_path
+  %li.events_menu= link_to 'Events', admin_events_path
+  %li.event_categories_menu= link_to 'Event Categories', admin_event_categories_path
+  %li.cities_menu= link_to 'Cities', admin_cities_path
+  %li.users_menu= link_to 'Users', admin_users_path
+  %li.contacts_menu= link_to 'Contacts', admin_contacts_path
+
+.right_menu
+  = link_to 'Back to Dashboard'.html_safe, dashboard_path
+.clear
+
+- content_for :on_ready do
+  == $('#admin_nav .#{controller_name}_menu').addClass('selected');

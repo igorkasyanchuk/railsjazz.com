@@ -1,0 +1,10 @@
+= title @project.title
+
+%h1.left #{@project.title}
+.add.right
+  = link_to "Edit", [:edit, :admin, @project], :class => 'edit_button'  
+.clear
+
+%p
+  = link_to "All Projects", [:admin, :projects], :class => 'index_button'
+  

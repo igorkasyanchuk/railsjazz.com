@@ -1,0 +1,5 @@
+= error_messages_for :project_category
+
+= simple_form_for([:admin, @project_category]) do |f|
+  = f.input :name
+  = f.submit f.object.new_record? ? 'Create' : "Update"
