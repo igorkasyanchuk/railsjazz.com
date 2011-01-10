@@ -51,6 +51,10 @@
   border: 1px solid #cccccc;
 }
 /* line 89, ../../app/stylesheets/_simple_form.sass */
+.simple_form input.button {
+  padding: 2px 4px;
+}
+/* line 95, ../../app/stylesheets/_simple_form.sass */
 .simple_form abbr {
   color: red;
   text-decoration: none;
@@ -84,41 +88,43 @@ table.zebra thead tr th, table.zebra th tr th {
   font-weight: bold;
   border: 1px solid #dddddd;
   background: #ececec;
+  text-align: left;
 }
-/* line 26, ../../app/stylesheets/tables.sass */
+/* line 27, ../../app/stylesheets/tables.sass */
 table.zebra tr.even td {
   background: #ececec;
 }
-/* line 29, ../../app/stylesheets/tables.sass */
+/* line 30, ../../app/stylesheets/tables.sass */
 table.zebra tr.odd td {
   background: white;
 }
-/* line 31, ../../app/stylesheets/tables.sass */
+/* line 32, ../../app/stylesheets/tables.sass */
 table.zebra tfoot {
   font-style: italic;
 }
-/* line 33, ../../app/stylesheets/tables.sass */
+/* line 34, ../../app/stylesheets/tables.sass */
 table.zebra caption {
   background: #eeeeee;
 }
-/* line 36, ../../app/stylesheets/tables.sass */
+/* line 37, ../../app/stylesheets/tables.sass */
 table.zebra td ol {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
 }
-/* line 40, ../../app/stylesheets/tables.sass */
+/* line 41, ../../app/stylesheets/tables.sass */
 table.zebra tr th {
   font-weight: bold;
+  text-align: left;
 }
 
-/* line 44, ../../app/stylesheets/tables.sass */
+/* line 47, ../../app/stylesheets/tables.sass */
 table td.table_block {
   background: #ececec;
   color: black;
   font-weight: bold;
 }
 
-/* line 50, ../../app/stylesheets/tables.sass */
+/* line 53, ../../app/stylesheets/tables.sass */
 table.vtop tr td {
   vertical-align: top;
 }

@@ -2,9 +2,14 @@
 
 = simple_form_for([:admin, @project], :html => { :multipart => true }) do |f|
   = f.input :title
+  = f.input :summary
+  = f.input :url
   = f.input :description, :input_html => {:rows => 20, :cols => 80}
-  = f.input :image, :label => "Full-size Main Image"
+  = f.input :technologies
+  = f.input :completed_on
+  = f.input :image, :label => "Full-size Main Image (full-size image)"
   = f.input :preview_image, :label => "Small preview (for home page)"
+  = f.input :portfolio_image, :label => "Preview (for portfolio page)"
   = f.input :featured
   = f.input :project_category_id, :as => :select, :collection => ProjectCategory.all
   = f.submit f.object.new_record? ? 'Create' : "Update"

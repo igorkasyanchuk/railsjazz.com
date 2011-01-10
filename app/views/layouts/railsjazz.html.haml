@@ -3,9 +3,9 @@
 
 %html{html_attrs}
   %head
-    <title>RailsJazz.com - Ruby, Ruby on Rails Development, outsourcing, HTMl/JS/CSS</title>
-    <meta content="Ruby, Ruby on Rails development for startups, outsourcing." name="description" />
-    <meta content="Ruby, Ruby on Rails development, startups, outsourcing, haml, js, jquery" name="keywords" />    
+    %title= (yield :title)
+    ==<meta content="#{yield :description}" name="description" />
+    ==<meta content="#{yield :keywords}" name="keywords" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     = stylesheet_link_tag 'railsjazz', 'footer'
     <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
@@ -18,10 +18,10 @@
             .container
               = link_to (image_tag 'Logo.png', :id => 'logo'), root_path
               #menu
-                = link_to 'Portfolio', portfolio_path, :id => 'portfolio_link'
-                = link_to 'About us', about_path, :id => 'about_link'
-                /= link_to 'Blog', services_path, :id => 'blog_link'
-                = link_to 'Contact us', contact_path, :id => 'contact_link'
+                = link_to 'Portfolio', portfolio_path, :id => 'portfolio_link', :class => active?("/portfolio")
+                = link_to 'About us', about_path, :id => 'about_link', :class => active?("/about")
+                /= link_to 'Blog', services_path, :id => 'blog_link', :class => active?("/blog")
+                = link_to 'Contact us', new_contact_path, :id => 'contact_link', :class => active?("/contacts/new")
           #content= yield
     #footer
       .container
@@ -31,3 +31,10 @@
           &copy; RailsJazz.com
           %br
           All right reserved.
+        .divider
+        #latest_projects
+          = image_tag 'footer_latestprojects.png'
+          %ul
+            - Project.latest.each do |project|
+              %li= link_to project.title, project
+        .clear

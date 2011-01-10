@@ -1,4 +1,6 @@
 class Screenshot < ActiveRecord::Base
+  belongs_to :project
+  validates_presence_of :description
 
   has_attached_file :image, 
                     :storage => :s3,

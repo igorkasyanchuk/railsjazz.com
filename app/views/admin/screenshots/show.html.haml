@@ -1,0 +1,14 @@
+= title @project.title
+
+%h1.left #{@project.title}
+.add.right
+  = link_to "Edit", [:edit, :admin, @project, @screenshot], :class => 'edit_button'  
+.clear
+
+%p
+  = @screenshot.description
+  %br
+  = image_tag @screenshot.image.url
+
+%p
+  = link_to "View All Project Sreenshots", [:admin, @project, :screenshots], :class => 'index_button'  

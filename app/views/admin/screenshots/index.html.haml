@@ -1,0 +1,26 @@
+= title "Manage #{@project.title} Screenshots"
+
+.add.right
+  = link_to "Add Screenshot", [:new, :admin, @project, :screenshot], :class => 'add_button'
+.clear  
+
+%p
+  = link_to "Back to Project", [:admin, @project], :class => 'index_button'
+
+- if @screenshots.count > 0
+  
+  %table.zebra
+    %tr
+      %th Description
+      %th Actions
+    - @screenshots.each do |screenshot|
+      %tr{ :class => cycle(:odd, :even)}
+        %td= screenshot.description
+        %td
+          = link_to 'show', [:admin, @project, screenshot], :class => 'show_button'
+          = link_to 'edit', [:edit, :admin, @project, screenshot], :class => 'edit_button'
+          = link_to 'remove', [:admin, @project, screenshot], :method => :delete, :confirm => 'Are you sure?', :class => 'delete_button'
+
+- else
+  %strong
+    Add Screenshot.

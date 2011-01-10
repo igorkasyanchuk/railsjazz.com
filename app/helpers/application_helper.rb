@@ -19,9 +19,21 @@ module ApplicationHelper
   
   def title(t)
     content_for :title do
-      t
+      t + " | RailsJazz.com - Ruby, Ruby on Rails Development."
     end
-  end   
+  end
+  
+  def keywords(t)
+    content_for :keywords do
+      t + ", Ruby, Ruby on Rails development, startups, outsourcing, haml, js, jquery"
+    end
+  end
+  
+  def description(t)
+    content_for :description do
+      t + ", Ruby, Ruby on Rails development for startups, outsourcing."
+    end
+  end
   
   def sortable(column, title = nil)
     title ||= column.titleize
@@ -32,6 +44,10 @@ module ApplicationHelper
   
   def w3c_date(date)
     date.utc.strftime("%Y-%m-%dT%H:%M:%S+00:00")
-  end  
+  end
+  
+  def active?(url)
+    request.fullpath.include?(url) ? "active" : ""
+  end
 
 end

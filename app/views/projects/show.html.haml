@@ -1,0 +1,18 @@
+= title @project.title
+
+.project_container
+  = link_to "back to portfolio", portfolio_path, :id => 'back'
+  #project
+    %h1.left= link_to @project.title, @project.url, :target => "_blank"
+    - if @project.url
+      .link.right
+        = link_to @project.url, @project.url
+    .clear
+    %p
+      = simple_format @project.description
+      = image_tag @project.image.url
+      
+    - @project.screenshots.each do |screenshot|
+      %p
+        = simple_format screenshot.description
+        = image_tag screenshot.image.url

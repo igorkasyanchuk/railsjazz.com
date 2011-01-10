@@ -4,7 +4,7 @@
   = link_to "Add Project", [:new, :admin, :project], :class => 'add_button'
 .clear  
 
-%table.zebra.w50
+%table.zebra
   %tr
     %th Name
     %th Category
@@ -19,6 +19,7 @@
         = link_to 'show', [:admin, project], :class => 'show_button'
         = link_to 'edit', [:edit, :admin, project], :class => 'edit_button'
         = link_to 'remove', [:admin, project], :method => :delete, :confirm => 'Are you sure?', :class => 'delete_button'
+        = link_to "screenshots(#{project.screenshots.count})", [:admin, project, :screenshots], :class => 'index_button'
   %tr
     %td{:colspan => 4}
       %strong Total: #{Project.count}

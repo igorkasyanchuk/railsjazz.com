@@ -14,7 +14,10 @@ RailsjazzCom::Application.routes.draw do
     resources :projects do
       resources :screenshots
     end
-  end  
+  end
+  
+  resources :projects, :only => [:show, :index]
+  resources :contacts, :only => [:new, :create, :index]   
 
   match "/sitemap.xml" , :controller => "sitemap", :action => "sitemap", :format => 'xml' 
 end

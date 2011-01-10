@@ -6,7 +6,16 @@
 .clear
 
 %p
+  = link_to 'Public View', @project, :target => "_blank"
+
+%p
   = @project.featured ? "Featured" : "Normal"
+  
+%p
+  %strong= @project.completed_on
+  
+%p
+  %i= @project.technologies  
 
 %p
   %strong= @project.project_category.name
@@ -15,10 +24,19 @@
   %i= @project.description
   
 %p
+  %strong Image for Project page
+  %br
   = image_tag @project.image.url
   
 %p
+  %strong Image for Home page
+  %br
   = image_tag @project.preview_image.url  
+  
+%p
+  %strong Portfolio Image
+  %br
+  = image_tag @project.portfolio_image.url  
 
 %p
   = link_to "View All Projects", [:admin, :projects], :class => 'index_button'

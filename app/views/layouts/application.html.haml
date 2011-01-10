@@ -4,7 +4,7 @@
     = stylesheet_link_tag 'railsjazz', 'admin', 'footer'
     = yield :css
     = csrf_meta_tag
-    = javascript_include_tag 'jquery-1.4.4.min'
+    = javascript_include_tag 'jquery-1.4.4.min', 'rails.jquery.js'
     %script{:type => 'text/javascript', :charset => 'utf-8'}
       $(document).ready(function() {
       = yield :on_ready

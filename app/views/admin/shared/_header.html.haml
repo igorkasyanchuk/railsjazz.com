@@ -1,8 +1,8 @@
 %ul#admin_nav
   %li= link_to "Home", root_path
-  %li.projects_menu= link_to 'Projects', admin_projects_path
-  %li.project_categories_menu= link_to 'Project Categories', admin_project_categories_path
-  %li.contacts_menu= link_to 'Contacts', admin_contacts_path
+  %li.projects_menu= link_to "Projects(#{Project.count})", admin_projects_path
+  /%li.project_categories_menu= link_to 'Project Categories', admin_project_categories_path
+  %li.contacts_menu= link_to "Contacts(#{Contact.count})", admin_contacts_path
 
 .clear
 

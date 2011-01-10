@@ -1,1 +1,25 @@
-%h1 Portfolio
+= title "Portfolio, Web Development, Web Design"
+= description "Portfolio, RailsJazz.com Portfolio"
+= keywords "Portfolio, RailsJazz.com Portfolio"
+
+#featured_projects_left
+#featured_projects_right
+#portfolio_list
+  .left.w50
+    - Project.web_design.all.each do |project|
+      .project_frame.project_frame0
+        = link_to (image_tag project.portfolio_image.url), project
+        .project_description
+          %h3= project.title
+          %span= project.summary
+          = link_to 'More Details >', project, :class => 'more_details'
+
+  .right.w50
+    - Project.web_development.all.each do |project|
+      .project_frame
+        = link_to (image_tag project.portfolio_image.url), project
+        .project_description
+          %h3= project.title
+          %span= project.summary
+          = link_to 'More Details >', project, :class => 'more_details'
+  .clear

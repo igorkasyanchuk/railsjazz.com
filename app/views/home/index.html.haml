@@ -1,7 +1,14 @@
+= title "Home"
+= description "Ruby on Rails, Sinatra, odesk"
+= keywords "Ruby on Rails, Sinatra, odesk"
+
 #featured_projects
 #featured_projects_list
-  - 6.times do
-    .project_preview_frame
-      =# image_tag p.preview_image.url
+  - 6.times do |t|
+    .project_preview_frame{:class => t % 3 == 0 ? 'project_preview_frame0' : ''}
       = image_tag "preview_small.png"
 .clear
+
+
+%ul#quotes
+  %li
