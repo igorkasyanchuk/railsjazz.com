@@ -8,7 +8,7 @@ class ContactsController < InheritedResources::Base
     @contact = Contact.new(params[:contact])
     #if verify_recaptcha(:model => @contact, :message => "Oh! It's error with reCAPTCHA!") && @contact.save
     if @contact.save
-      redirect_to root_path, :notice => "You message sent successfully."
+      redirect_to contact_path(@contact)
     else
       render :new
     end

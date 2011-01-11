@@ -6,6 +6,11 @@
 #about_page.box_middle
   .page_block
     %h1 About us
-    %p We are team of ....
-    %p The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    %p RailsJazz is a small company, for that reason, excellent customer service is our main focus. We will work closely with you to make sure you are always satisfied.
+    %p We like interesting people with innovative ideas and we would be happy to help such people to achieve their dreams.
+    %p 
+      Send us a #{link_to 'message', new_contact_path} with some information about you and the project and we will follow up with you as soon as possible!
+    %div#message
+      %span Call: +38 068 540 6235
+      %span Email: #{mail_to 'hi@railsjazz.com'}
 .page_container.box_bottom

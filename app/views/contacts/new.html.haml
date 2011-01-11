@@ -5,6 +5,7 @@
 .page.box_middle
   .page_block
     %h1 Contact us
+    %p Send us a message with some information about you and the project and we will follow up with you as soon as possible!
     = simple_form_for @contact do |f|
       = f.error_messages
       = render :partial => 'form', :locals => { :f => f }

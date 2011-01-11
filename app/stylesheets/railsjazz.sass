@@ -234,11 +234,9 @@ span.copy
   +image_button(74,21,"portfolio_btn_back_both.png")
 
 #contact_button
-  position: absolute
-  right: 0px
-  top: -35px
   z-index: 6100
   +image_button(74,29,"contact_btn.png")
+  cursor: pointer
     
 #project_page
   margin: 0 auto
@@ -290,7 +288,8 @@ span.copy
           color: white
           
 #about_page
-  min-height: 400px
+  height: 300px
+  min-height: 300px
   margin: 0 auto
   position: relative
   color: white
@@ -301,6 +300,9 @@ span.copy
     margin-bottom: 16px
   p
     font-size: 16px
+    line-height: 24px
+  a
+    color: white
   
 ul#quotes
   color: black
@@ -308,6 +310,7 @@ ul#quotes
   line-height: 17px  
   list-style-type: none
   margin: 32px
+  margin-bottom: 0
   li
     background: transparent url(/images/home_bgfortext_02_transparent.png) no-repeat left top
     height: 48px
@@ -361,3 +364,9 @@ ul#quotes
 .box_middle
   background: url(/images/project_frame_middle.png) repeat-y top left
   width: 756px
+  
+#message
+  position: absolute
+  bottom: 0
+  span
+    display: block

@@ -5,7 +5,6 @@ RailsjazzCom::Application.routes.draw do
   match '/portfolio' => 'home#portfolio' 
   match '/about' => 'home#about' 
   match '/blog' => 'home#blog' 
-  match '/contact' => 'home#contact' 
   
   namespace :admin do
     match '/', :to => 'dashboard#welcome'
@@ -17,7 +16,7 @@ RailsjazzCom::Application.routes.draw do
   end
   
   resources :projects, :only => [:show, :index]
-  resources :contacts, :only => [:new, :create, :index]   
+  resources :contacts, :only => [:new, :create, :index, :show]   
 
   match "/sitemap.xml" , :controller => "sitemap", :action => "sitemap", :format => 'xml' 
 end
