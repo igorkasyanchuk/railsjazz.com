@@ -19,19 +19,19 @@ module ApplicationHelper
   
   def title(t)
     content_for :title do
-      t + " | RailsJazz.com - Ruby, Ruby on Rails Development."
+      t + " | RailsJazz.com - Ruby on Rails Development, Web Design, Logo, Branding."
     end
   end
   
   def keywords(t)
     content_for :keywords do
-      t + ", Ruby, Ruby on Rails development, startups, outsourcing, haml, js, jquery"
+      t + ", Ruby, Ruby on Rails development, web design, logo, startups, outsourcing, haml, js, jquery"
     end
   end
   
   def description(t)
     content_for :description do
-      t + ", Ruby, Ruby on Rails development for startups, outsourcing."
+      t + ", Ruby, Ruby on Rails development, web design for startups, outsourcing, web design, logo, ."
     end
   end
   
