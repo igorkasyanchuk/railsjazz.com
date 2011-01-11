@@ -740,8 +740,8 @@ span.copy {
 
 /* line 579, ../../app/stylesheets/railsjazz.sass */
 #about_page {
-  height: 315px;
-  min-height: 315px;
+  height: 345px;
+  min-height: 345px;
   margin: 0 auto;
   position: relative;
   color: white;
@@ -858,4 +858,21 @@ ul#quotes li span {
 /* line 741, ../../app/stylesheets/railsjazz.sass */
 #message span {
   display: block;
+  line-height: 18px;
+}
+
+/* line 753, ../../app/stylesheets/railsjazz.sass */
+#contact_form .simple_form label {
+  float: left;
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+/* line 763, ../../app/stylesheets/railsjazz.sass */
+#contact_form .simple_form .button {
+  margin-left: 445px;
+}
+/* line 767, ../../app/stylesheets/railsjazz.sass */
+#contact_form .simple_form input, #contact_form .simple_form textarea {
+  width: 300px;
 }
