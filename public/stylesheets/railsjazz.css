@@ -409,7 +409,7 @@ body {
   vertical-align: middle;
   *padding-left: 1000px;
   position: absolute;
-  top: 60px;
+  top: 65px;
 }
 /* line 34, ../../app/stylesheets/_buttons.sass */
 #skype_link.active {
@@ -445,7 +445,7 @@ body {
   vertical-align: middle;
   *padding-left: 1000px;
   position: absolute;
-  top: 100px;
+  top: 105px;
   left: 60px;
 }
 /* line 34, ../../app/stylesheets/_buttons.sass */
