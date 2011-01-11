@@ -770,7 +770,7 @@ span.copy {
 /* line 619, ../../app/stylesheets/railsjazz.sass */
 ul#quotes {
   position: relative;
-  top: 45px;
+  top: 55px;
   color: black;
   font-size: 17px;
   line-height: 22px;
@@ -787,7 +787,7 @@ ul#quotes li {
 }
 /* line 647, ../../app/stylesheets/railsjazz.sass */
 ul#quotes li span {
-  padding-top: 30px;
+  padding-top: 33px;
   display: block;
 }
 
