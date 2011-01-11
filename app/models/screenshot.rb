@@ -4,7 +4,7 @@ class Screenshot < ActiveRecord::Base
 
   has_attached_file :image, 
                     :storage => :s3,
-                    :path => ":attachment/:id/:style.:extension",
+                    :path => "screenshot/:attachment/:id/:style.:extension",
                     :bucket => "www.railsjazz.com_#{Rails.env}",
                     :s3_credentials => {
                       :access_key_id => ENV['S3_KEY'],
