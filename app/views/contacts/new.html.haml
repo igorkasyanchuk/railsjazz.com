@@ -4,7 +4,7 @@
 .page_container.box_top
 #contact_form.page.box_middle
   .page_block
-    %h1 Contact
+    %h1= image_tag 'contact_title.png'
     %p Send us a message with some information about you and the project and we will follow up with you as soon as possible!
     = simple_form_for @contact do |f|
       = f.error_messages

@@ -781,13 +781,13 @@ ul#quotes {
 /* line 637, ../../app/stylesheets/railsjazz.sass */
 ul#quotes li {
   background: transparent url(/images/home_bgfortext_02_transparent.png) no-repeat left top;
-  height: 64px;
+  height: 98px;
   margin: 0px;
   vertical-align: bottom;
 }
 /* line 647, ../../app/stylesheets/railsjazz.sass */
 ul#quotes li span {
-  padding-top: 20px;
+  padding-top: 30px;
   display: block;
 }
 
@@ -867,19 +867,29 @@ ul#quotes li span {
   line-height: 18px;
 }
 
-/* line 763, ../../app/stylesheets/railsjazz.sass */
+/* line 761, ../../app/stylesheets/railsjazz.sass */
+#contact_form h1 {
+  margin-bottom: 16px;
+}
+/* line 765, ../../app/stylesheets/railsjazz.sass */
+#contact_form p {
+  font-size: 14px;
+}
+/* line 771, ../../app/stylesheets/railsjazz.sass */
 #contact_form .simple_form label {
   float: left;
   width: 200px;
   text-align: right;
   padding-right: 8px;
   font-size: 16px;
+  font-weight: normal;
+  color: #ec1b2f;
 }
-/* line 775, ../../app/stylesheets/railsjazz.sass */
+/* line 787, ../../app/stylesheets/railsjazz.sass */
 #contact_form .simple_form .button {
   margin-left: 445px;
 }
-/* line 779, ../../app/stylesheets/railsjazz.sass */
+/* line 791, ../../app/stylesheets/railsjazz.sass */
 #contact_form .simple_form input[type='text'], #contact_form .simple_form input[type='email'], #contact_form .simple_form textarea {
   width: 300px;
   background: #ec1b2f;
