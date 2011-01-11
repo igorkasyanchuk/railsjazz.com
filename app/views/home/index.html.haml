@@ -4,13 +4,24 @@
 
 #featured_projects
 #featured_projects_list
-  - 6.times do |t|
-    .project_preview_frame{:class => t % 3 == 0 ? 'project_preview_frame0' : ''}
-      = image_tag "preview_small.png"
+  - Project.featured.all.each_with_index do |project, i|
+    .project_preview_frame{:class => i % 3 == 0 ? 'project_preview_frame0' : ''}
+      = link_to (image_tag project.preview_image.url), project
+      .project_description
+        %h3
+          = link_to project.title, project
 .clear
 
-
 %ul#quotes
-  %li Why?
-  %li Who?
-  %li Result!
+  %li
+    %span
+      = image_tag 'home_titlte_wedevelopment.png', :alt => "web development"
+      Ruby on Rails, jQuery, Sinatra, HAML, SASS, HTML/CSS, Chargify, Google Maps, Thinking Sphinx.
+  %li
+    %span
+      = image_tag 'home_title_design.png', :alt => "web design"
+      Adobe Photoshop & Illustrator.
+  %li
+    %span    
+      = image_tag 'home_titlte_seo.png', :alt => "seo"
+      Search Engine Optimization (Google, Yandex).
