@@ -740,8 +740,8 @@ span.copy {
 
 /* line 579, ../../app/stylesheets/railsjazz.sass */
 #about_page {
-  height: 300px;
-  min-height: 300px;
+  height: 315px;
+  min-height: 315px;
   margin: 0 auto;
   position: relative;
   color: white;
@@ -853,7 +853,7 @@ ul#quotes li span {
 /* line 735, ../../app/stylesheets/railsjazz.sass */
 #message {
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
 }
 /* line 741, ../../app/stylesheets/railsjazz.sass */
 #message span {
