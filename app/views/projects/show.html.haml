@@ -5,7 +5,7 @@
 
 .page_container.box_top
 #project_page.box_middle
-  .page_block
+  .page_block.smaller_page_block
     #project
       %h1.left= link_to @project.title, @project.url, :target => "_blank"
       - if @project.url
@@ -20,4 +20,8 @@
         %p
           = simple_format screenshot.description
           = image_tag screenshot.image.url
-.page_container.box_bottom      
+          
+      - if @project.technologies.present?
+        %p
+          %strong= @project.technologies
+.page_container.box_bottom

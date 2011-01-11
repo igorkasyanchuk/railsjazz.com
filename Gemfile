@@ -11,7 +11,7 @@ gem 'compass'
 gem "compass-960-plugin"
 gem "high_voltage" 
 gem "simple_form"
-gem 'paperclip', '2.3.6' 
+gem 'paperclip', '2.3.8' 
 gem 'aws-s3', :require => 'aws/s3' 
 gem 'pg'
 gem 'RedCloth'

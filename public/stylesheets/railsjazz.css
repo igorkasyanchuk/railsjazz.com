@@ -677,7 +677,7 @@ span.copy {
 }
 /* line 501, ../../app/stylesheets/railsjazz.sass */
 #project_page #project {
-  width: 710px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -826,6 +826,12 @@ ul#quotes li span {
 }
 
 /* line 699, ../../app/stylesheets/railsjazz.sass */
+.page_block.smaller_page_block {
+  padding: 16px 23px;
+  padding-bottom: 0;
+}
+
+/* line 707, ../../app/stylesheets/railsjazz.sass */
 .page {
   width: 756px;
   min-height: 320px;
@@ -836,46 +842,46 @@ ul#quotes li span {
   z-index: 6000;
 }
 
-/* line 717, ../../app/stylesheets/railsjazz.sass */
+/* line 725, ../../app/stylesheets/railsjazz.sass */
 .box_top {
   background: url(/images/project_frame_up.png) repeat-y top left;
   width: 756px;
   height: 10px;
 }
 
-/* line 727, ../../app/stylesheets/railsjazz.sass */
+/* line 735, ../../app/stylesheets/railsjazz.sass */
 .box_bottom {
   background: url(/images/project_frame_down.png) repeat-y top left;
   width: 756px;
   height: 10px;
 }
 
-/* line 737, ../../app/stylesheets/railsjazz.sass */
+/* line 745, ../../app/stylesheets/railsjazz.sass */
 .box_middle {
   background: url(/images/project_frame_middle.png) repeat-y top left;
   width: 756px;
 }
 
-/* line 745, ../../app/stylesheets/railsjazz.sass */
+/* line 753, ../../app/stylesheets/railsjazz.sass */
 #message {
   position: absolute;
   bottom: 25px;
 }
-/* line 751, ../../app/stylesheets/railsjazz.sass */
+/* line 759, ../../app/stylesheets/railsjazz.sass */
 #message span {
   display: block;
   line-height: 18px;
 }
 
-/* line 761, ../../app/stylesheets/railsjazz.sass */
+/* line 769, ../../app/stylesheets/railsjazz.sass */
 #contact_form h1 {
   margin-bottom: 16px;
 }
-/* line 765, ../../app/stylesheets/railsjazz.sass */
+/* line 773, ../../app/stylesheets/railsjazz.sass */
 #contact_form p {
   font-size: 14px;
 }
-/* line 771, ../../app/stylesheets/railsjazz.sass */
+/* line 779, ../../app/stylesheets/railsjazz.sass */
 #contact_form .simple_form label {
   float: left;
   width: 200px;
@@ -885,11 +891,11 @@ ul#quotes li span {
   font-weight: normal;
   color: #ec1b2f;
 }
-/* line 787, ../../app/stylesheets/railsjazz.sass */
+/* line 795, ../../app/stylesheets/railsjazz.sass */
 #contact_form .simple_form .button {
   margin-left: 445px;
 }
-/* line 791, ../../app/stylesheets/railsjazz.sass */
+/* line 799, ../../app/stylesheets/railsjazz.sass */
 #contact_form .simple_form input[type='text'], #contact_form .simple_form input[type='email'], #contact_form .simple_form textarea {
   width: 300px;
   background: #ec1b2f;
