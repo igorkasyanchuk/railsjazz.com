@@ -2,6 +2,7 @@
 @import "simple_form"
 
 $red_color: #ae101f
+$fields_bg: #ec1b2f
 
 html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
   margin: 0
@@ -104,7 +105,7 @@ body
 #featured_projects_list
   border: 2px solid 1
   position: relative
-  top: 5px
+  top: 1px
   width: 100%
   z-index: 1500
   
@@ -171,6 +172,8 @@ span.copy
       padding: 0
       padding-top: 4px
       color: white
+    a
+      text-decoration: none
 
 .project_frame
   float: left
@@ -276,12 +279,12 @@ span.copy
         
 #latest_projects
   float: right
-  padding-top: 60px
+  padding-top: 70px
   ul
     li
-      font-size: 16px
+      font-size: 14px
       text-align: right
-      line-height: 24px
+      line-height: 20px
       a
         color: white
         &:visited, &:hover
@@ -306,10 +309,10 @@ span.copy
   
 ul#quotes
   color: black
-  font-size: 14px
-  line-height: 17px  
+  font-size: 17px
+  line-height: 22px  
   list-style-type: none
-  margin: 32px
+  margin-top: 32px
   margin-bottom: 0
   li
     background: transparent url(/images/home_bgfortext_02_transparent.png) no-repeat left top
@@ -379,7 +382,10 @@ ul#quotes
       width: 200px
       text-align: right
       padding-right: 8px
+      font-size: 16px
     .button
       margin-left: 445px
-    input, textarea
-      width: 300px    
+    input[type='text'], input[type='email'], textarea
+      width: 300px
+      background: $fields_bg
+      border: 1px solid $fields_bg

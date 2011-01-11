@@ -77,7 +77,7 @@
   border-bottom: 0 none;
 }
 
-/* line 11, ../../app/stylesheets/railsjazz.sass */
+/* line 13, ../../app/stylesheets/railsjazz.sass */
 html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -88,53 +88,53 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
   vertical-align: baseline;
 }
 
-/* line 29, ../../app/stylesheets/railsjazz.sass */
+/* line 31, ../../app/stylesheets/railsjazz.sass */
 p {
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 12px;
 }
 
-/* line 39, ../../app/stylesheets/railsjazz.sass */
+/* line 41, ../../app/stylesheets/railsjazz.sass */
 .notice {
   color: green;
 }
 
-/* line 45, ../../app/stylesheets/railsjazz.sass */
+/* line 47, ../../app/stylesheets/railsjazz.sass */
 .errors {
   color: red;
 }
 
-/* line 51, ../../app/stylesheets/railsjazz.sass */
+/* line 53, ../../app/stylesheets/railsjazz.sass */
 body {
   background: #ae101f;
   font-family: "PT Sans", Tahoma;
   font-size: 12px;
 }
 
-/* line 61, ../../app/stylesheets/railsjazz.sass */
+/* line 63, ../../app/stylesheets/railsjazz.sass */
 .left {
   float: left;
 }
 
-/* line 67, ../../app/stylesheets/railsjazz.sass */
+/* line 69, ../../app/stylesheets/railsjazz.sass */
 .right {
   float: right;
 }
 
-/* line 73, ../../app/stylesheets/railsjazz.sass */
+/* line 75, ../../app/stylesheets/railsjazz.sass */
 .clear {
   clear: both;
 }
 
-/* line 79, ../../app/stylesheets/railsjazz.sass */
+/* line 81, ../../app/stylesheets/railsjazz.sass */
 #header {
   background: transparent url(/images/head_1628x326.png) center top repeat-x;
   height: 326px;
   width: 100%;
 }
 
-/* line 89, ../../app/stylesheets/railsjazz.sass */
+/* line 91, ../../app/stylesheets/railsjazz.sass */
 .container {
   position: relative;
   width: 930px;
@@ -142,7 +142,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 101, ../../app/stylesheets/railsjazz.sass */
+/* line 103, ../../app/stylesheets/railsjazz.sass */
 #menu {
   position: absolute;
   right: 110px;
@@ -150,19 +150,19 @@ body {
   color: white;
   z-index: 500;
 }
-/* line 113, ../../app/stylesheets/railsjazz.sass */
+/* line 115, ../../app/stylesheets/railsjazz.sass */
 #menu a {
   margin-left: 50px;
 }
 
-/* line 119, ../../app/stylesheets/railsjazz.sass */
+/* line 121, ../../app/stylesheets/railsjazz.sass */
 #logo {
   position: absolute;
   left: -12px;
   z-index: 9999;
 }
 
-/* line 129, ../../app/stylesheets/railsjazz.sass */
+/* line 131, ../../app/stylesheets/railsjazz.sass */
 #content {
   width: 950px;
   margin: 0 auto;
@@ -171,7 +171,7 @@ body {
   z-index: 1000;
 }
 
-/* line 143, ../../app/stylesheets/railsjazz.sass */
+/* line 145, ../../app/stylesheets/railsjazz.sass */
 #featured_projects {
   background: transparent url(/images/featured.png) no-repeat center top;
   width: 446px;
@@ -182,7 +182,7 @@ body {
   top: -70px;
 }
 
-/* line 177, ../../app/stylesheets/railsjazz.sass */
+/* line 179, ../../app/stylesheets/railsjazz.sass */
 #featured_projects_left {
   left: 225px;
   background: transparent url(/images/webdevelopment_03.png) no-repeat center top;
@@ -193,7 +193,7 @@ body {
   top: -40px;
 }
 
-/* line 185, ../../app/stylesheets/railsjazz.sass */
+/* line 187, ../../app/stylesheets/railsjazz.sass */
 #featured_projects_right {
   background: transparent url(/images/webdevelopment_03.png) no-repeat center top;
   width: 255px;
@@ -205,7 +205,7 @@ body {
   right: -30px;
 }
 
-/* line 195, ../../app/stylesheets/railsjazz.sass */
+/* line 197, ../../app/stylesheets/railsjazz.sass */
 #portfolio_list {
   position: relative;
   top: 0px;
@@ -213,16 +213,16 @@ body {
   z-index: 1500;
 }
 
-/* line 207, ../../app/stylesheets/railsjazz.sass */
+/* line 209, ../../app/stylesheets/railsjazz.sass */
 #featured_projects_list {
   border: 2px solid 1;
   position: relative;
-  top: 5px;
+  top: 1px;
   width: 100%;
   z-index: 1500;
 }
 
-/* line 221, ../../app/stylesheets/railsjazz.sass */
+/* line 223, ../../app/stylesheets/railsjazz.sass */
 #services_link {
   color: red;
   width: 101px;
@@ -256,7 +256,7 @@ body {
   background-position: 0px 18px;
 }
 
-/* line 227, ../../app/stylesheets/railsjazz.sass */
+/* line 229, ../../app/stylesheets/railsjazz.sass */
 #portfolio_link {
   color: red;
   width: 119px;
@@ -290,7 +290,7 @@ body {
   background-position: 0px 18px;
 }
 
-/* line 233, ../../app/stylesheets/railsjazz.sass */
+/* line 235, ../../app/stylesheets/railsjazz.sass */
 #about_link {
   color: red;
   width: 106px;
@@ -324,7 +324,7 @@ body {
   background-position: 0px 18px;
 }
 
-/* line 239, ../../app/stylesheets/railsjazz.sass */
+/* line 241, ../../app/stylesheets/railsjazz.sass */
 #blog_link {
   color: red;
   width: 59px;
@@ -358,7 +358,7 @@ body {
   background-position: 0px 18px;
 }
 
-/* line 245, ../../app/stylesheets/railsjazz.sass */
+/* line 247, ../../app/stylesheets/railsjazz.sass */
 #contact_link {
   color: red;
   width: 138px;
@@ -392,7 +392,7 @@ body {
   background-position: 0px 18px;
 }
 
-/* line 251, ../../app/stylesheets/railsjazz.sass */
+/* line 253, ../../app/stylesheets/railsjazz.sass */
 #skype_link {
   color: red;
   width: 127px;
@@ -428,7 +428,7 @@ body {
   background-position: 0px 58px;
 }
 
-/* line 261, ../../app/stylesheets/railsjazz.sass */
+/* line 263, ../../app/stylesheets/railsjazz.sass */
 #email_link {
   color: red;
   width: 165px;
@@ -465,7 +465,7 @@ body {
   background-position: 0px 48px;
 }
 
-/* line 273, ../../app/stylesheets/railsjazz.sass */
+/* line 275, ../../app/stylesheets/railsjazz.sass */
 span.copy {
   display: block;
   position: absolute;
@@ -473,7 +473,7 @@ span.copy {
   color: #ae101f;
 }
 
-/* line 285, ../../app/stylesheets/railsjazz.sass */
+/* line 287, ../../app/stylesheets/railsjazz.sass */
 .project_preview_frame {
   float: left;
   margin-left: 16px;
@@ -483,7 +483,7 @@ span.copy {
   width: 306px;
   height: 230px;
 }
-/* line 301, ../../app/stylesheets/railsjazz.sass */
+/* line 303, ../../app/stylesheets/railsjazz.sass */
 .project_preview_frame img {
   width: 306px;
   height: 230px;
@@ -492,7 +492,7 @@ span.copy {
   top: 0px;
   z-index: 5000;
 }
-/* line 315, ../../app/stylesheets/railsjazz.sass */
+/* line 317, ../../app/stylesheets/railsjazz.sass */
 .project_preview_frame .project_description {
   position: absolute;
   bottom: 10px;
@@ -504,7 +504,7 @@ span.copy {
   padding: 4px 12px;
   color: white;
 }
-/* line 335, ../../app/stylesheets/railsjazz.sass */
+/* line 337, ../../app/stylesheets/railsjazz.sass */
 .project_preview_frame .project_description h3, .project_preview_frame .project_description h3 a {
   font-size: 20px;
   margin: 0;
@@ -512,8 +512,12 @@ span.copy {
   padding-top: 4px;
   color: white;
 }
-
 /* line 349, ../../app/stylesheets/railsjazz.sass */
+.project_preview_frame .project_description a {
+  text-decoration: none;
+}
+
+/* line 355, ../../app/stylesheets/railsjazz.sass */
 .project_frame {
   float: left;
   margin-left: 4px;
@@ -524,14 +528,14 @@ span.copy {
   padding: 6px;
   padding-bottom: 0px;
 }
-/* line 367, ../../app/stylesheets/railsjazz.sass */
+/* line 373, ../../app/stylesheets/railsjazz.sass */
 .project_frame img {
   position: absolute;
   left: 15px;
   top: 15px;
   z-index: 5000;
 }
-/* line 377, ../../app/stylesheets/railsjazz.sass */
+/* line 383, ../../app/stylesheets/railsjazz.sass */
 .project_frame .project_description {
   position: absolute;
   bottom: 15px;
@@ -543,21 +547,21 @@ span.copy {
   padding: 4px 12px;
   color: white;
 }
-/* line 397, ../../app/stylesheets/railsjazz.sass */
+/* line 403, ../../app/stylesheets/railsjazz.sass */
 .project_frame .project_description h3 {
   font-size: 20px;
   margin: 0;
   padding: 0;
   padding-top: 4px;
 }
-/* line 407, ../../app/stylesheets/railsjazz.sass */
+/* line 413, ../../app/stylesheets/railsjazz.sass */
 .project_frame .project_description span {
   display: block;
   line-height: 20px;
   font-size: 14px;
   padding-top: 4px;
 }
-/* line 417, ../../app/stylesheets/railsjazz.sass */
+/* line 423, ../../app/stylesheets/railsjazz.sass */
 .project_frame .project_description a.more_details {
   position: absolute;
   right: 36px;
@@ -568,27 +572,27 @@ span.copy {
   font-weight: normal;
 }
 
-/* line 435, ../../app/stylesheets/railsjazz.sass */
+/* line 441, ../../app/stylesheets/railsjazz.sass */
 .project_preview_frame0 {
   margin-left: 0;
 }
 
-/* line 441, ../../app/stylesheets/railsjazz.sass */
+/* line 447, ../../app/stylesheets/railsjazz.sass */
 .project_frame0 {
   margin-left: 0;
 }
 
-/* line 447, ../../app/stylesheets/railsjazz.sass */
+/* line 453, ../../app/stylesheets/railsjazz.sass */
 .w50 {
   width: 49%;
 }
 
-/* line 451, ../../app/stylesheets/railsjazz.sass */
+/* line 457, ../../app/stylesheets/railsjazz.sass */
 .w33 {
   width: 33%;
 }
 
-/* line 457, ../../app/stylesheets/railsjazz.sass */
+/* line 463, ../../app/stylesheets/railsjazz.sass */
 #back {
   position: absolute;
   right: 0px;
@@ -626,7 +630,7 @@ span.copy {
   background-position: 0px 21px;
 }
 
-/* line 471, ../../app/stylesheets/railsjazz.sass */
+/* line 477, ../../app/stylesheets/railsjazz.sass */
 #contact_button {
   z-index: 6100;
   color: red;
@@ -662,7 +666,7 @@ span.copy {
   background-position: 0px 29px;
 }
 
-/* line 481, ../../app/stylesheets/railsjazz.sass */
+/* line 487, ../../app/stylesheets/railsjazz.sass */
 #project_page {
   margin: 0 auto;
   position: relative;
@@ -671,39 +675,39 @@ span.copy {
   z-index: 6000;
   color: white;
 }
-/* line 495, ../../app/stylesheets/railsjazz.sass */
+/* line 501, ../../app/stylesheets/railsjazz.sass */
 #project_page #project {
   width: 710px;
   margin: 0;
   padding: 0;
 }
-/* line 503, ../../app/stylesheets/railsjazz.sass */
+/* line 509, ../../app/stylesheets/railsjazz.sass */
 #project_page #project .link {
   margin-right: 0px;
 }
-/* line 507, ../../app/stylesheets/railsjazz.sass */
+/* line 513, ../../app/stylesheets/railsjazz.sass */
 #project_page #project .link a {
   font-size: 14px;
   color: white;
 }
-/* line 513, ../../app/stylesheets/railsjazz.sass */
+/* line 519, ../../app/stylesheets/railsjazz.sass */
 #project_page #project .link a:visited, #project_page #project .link a:hover {
   color: white;
 }
-/* line 517, ../../app/stylesheets/railsjazz.sass */
+/* line 523, ../../app/stylesheets/railsjazz.sass */
 #project_page #project h1 {
   text-decoration: underline;
   padding-bottom: 16px;
 }
-/* line 523, ../../app/stylesheets/railsjazz.sass */
+/* line 529, ../../app/stylesheets/railsjazz.sass */
 #project_page #project h1 a {
   color: white;
 }
-/* line 527, ../../app/stylesheets/railsjazz.sass */
+/* line 533, ../../app/stylesheets/railsjazz.sass */
 #project_page #project h1 a:visited, #project_page #project h1 a:hover {
   color: white;
 }
-/* line 531, ../../app/stylesheets/railsjazz.sass */
+/* line 537, ../../app/stylesheets/railsjazz.sass */
 #project_page #project p {
   width: 710px;
   font-size: 16px;
@@ -712,33 +716,33 @@ span.copy {
   padding: 0;
   padding-bottom: 16px;
 }
-/* line 545, ../../app/stylesheets/railsjazz.sass */
+/* line 551, ../../app/stylesheets/railsjazz.sass */
 #project_page #project p img {
   margin: 0;
   padding: 0;
 }
 
-/* line 553, ../../app/stylesheets/railsjazz.sass */
+/* line 559, ../../app/stylesheets/railsjazz.sass */
 #latest_projects {
   float: right;
-  padding-top: 60px;
+  padding-top: 70px;
 }
-/* line 561, ../../app/stylesheets/railsjazz.sass */
+/* line 567, ../../app/stylesheets/railsjazz.sass */
 #latest_projects ul li {
-  font-size: 16px;
+  font-size: 14px;
   text-align: right;
-  line-height: 24px;
+  line-height: 20px;
 }
-/* line 569, ../../app/stylesheets/railsjazz.sass */
+/* line 575, ../../app/stylesheets/railsjazz.sass */
 #latest_projects ul li a {
   color: white;
 }
-/* line 573, ../../app/stylesheets/railsjazz.sass */
+/* line 579, ../../app/stylesheets/railsjazz.sass */
 #latest_projects ul li a:visited, #latest_projects ul li a:hover {
   color: white;
 }
 
-/* line 579, ../../app/stylesheets/railsjazz.sass */
+/* line 585, ../../app/stylesheets/railsjazz.sass */
 #about_page {
   height: 345px;
   min-height: 345px;
@@ -749,49 +753,49 @@ span.copy {
   z-index: 6000;
   color: white;
 }
-/* line 597, ../../app/stylesheets/railsjazz.sass */
+/* line 603, ../../app/stylesheets/railsjazz.sass */
 #about_page h1 {
   margin-bottom: 16px;
 }
-/* line 601, ../../app/stylesheets/railsjazz.sass */
+/* line 607, ../../app/stylesheets/railsjazz.sass */
 #about_page p {
   font-size: 16px;
   line-height: 24px;
 }
-/* line 607, ../../app/stylesheets/railsjazz.sass */
+/* line 613, ../../app/stylesheets/railsjazz.sass */
 #about_page a {
   color: white;
 }
 
-/* line 613, ../../app/stylesheets/railsjazz.sass */
+/* line 619, ../../app/stylesheets/railsjazz.sass */
 ul#quotes {
   color: black;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 17px;
+  line-height: 22px;
   list-style-type: none;
-  margin: 32px;
+  margin-top: 32px;
   margin-bottom: 0;
 }
-/* line 627, ../../app/stylesheets/railsjazz.sass */
+/* line 633, ../../app/stylesheets/railsjazz.sass */
 ul#quotes li {
   background: transparent url(/images/home_bgfortext_02_transparent.png) no-repeat left top;
   height: 48px;
   margin: 0px;
   vertical-align: bottom;
 }
-/* line 637, ../../app/stylesheets/railsjazz.sass */
+/* line 643, ../../app/stylesheets/railsjazz.sass */
 ul#quotes li span {
   padding-top: 12px;
   display: block;
 }
 
-/* line 645, ../../app/stylesheets/railsjazz.sass */
+/* line 651, ../../app/stylesheets/railsjazz.sass */
 .errorExplanation ul {
   margin-left: 32px;
   padding-bottom: 16px;
 }
 
-/* line 653, ../../app/stylesheets/railsjazz.sass */
+/* line 659, ../../app/stylesheets/railsjazz.sass */
 .page_container {
   width: 756px;
   margin: 0 auto;
@@ -801,25 +805,25 @@ ul#quotes li span {
   z-index: 6000;
 }
 
-/* line 669, ../../app/stylesheets/railsjazz.sass */
+/* line 675, ../../app/stylesheets/railsjazz.sass */
 .page_block {
   padding: 16px 25px;
 }
-/* line 673, ../../app/stylesheets/railsjazz.sass */
+/* line 679, ../../app/stylesheets/railsjazz.sass */
 .page_block .simple_form {
   padding-top: 16px;
 }
-/* line 677, ../../app/stylesheets/railsjazz.sass */
+/* line 683, ../../app/stylesheets/railsjazz.sass */
 .page_block .simple_form abbr {
   color: #333333;
   display: none;
 }
-/* line 683, ../../app/stylesheets/railsjazz.sass */
+/* line 689, ../../app/stylesheets/railsjazz.sass */
 .page_block .simple_form label {
   color: red;
 }
 
-/* line 689, ../../app/stylesheets/railsjazz.sass */
+/* line 695, ../../app/stylesheets/railsjazz.sass */
 .page {
   width: 756px;
   min-height: 320px;
@@ -830,49 +834,52 @@ ul#quotes li span {
   z-index: 6000;
 }
 
-/* line 707, ../../app/stylesheets/railsjazz.sass */
+/* line 713, ../../app/stylesheets/railsjazz.sass */
 .box_top {
   background: url(/images/project_frame_up.png) repeat-y top left;
   width: 756px;
   height: 10px;
 }
 
-/* line 717, ../../app/stylesheets/railsjazz.sass */
+/* line 723, ../../app/stylesheets/railsjazz.sass */
 .box_bottom {
   background: url(/images/project_frame_down.png) repeat-y top left;
   width: 756px;
   height: 10px;
 }
 
-/* line 727, ../../app/stylesheets/railsjazz.sass */
+/* line 733, ../../app/stylesheets/railsjazz.sass */
 .box_middle {
   background: url(/images/project_frame_middle.png) repeat-y top left;
   width: 756px;
 }
 
-/* line 735, ../../app/stylesheets/railsjazz.sass */
+/* line 741, ../../app/stylesheets/railsjazz.sass */
 #message {
   position: absolute;
   bottom: 25px;
 }
-/* line 741, ../../app/stylesheets/railsjazz.sass */
+/* line 747, ../../app/stylesheets/railsjazz.sass */
 #message span {
   display: block;
   line-height: 18px;
 }
 
-/* line 753, ../../app/stylesheets/railsjazz.sass */
+/* line 759, ../../app/stylesheets/railsjazz.sass */
 #contact_form .simple_form label {
   float: left;
   width: 200px;
   text-align: right;
   padding-right: 8px;
+  font-size: 16px;
 }
-/* line 763, ../../app/stylesheets/railsjazz.sass */
+/* line 771, ../../app/stylesheets/railsjazz.sass */
 #contact_form .simple_form .button {
   margin-left: 445px;
 }
-/* line 767, ../../app/stylesheets/railsjazz.sass */
-#contact_form .simple_form input, #contact_form .simple_form textarea {
+/* line 775, ../../app/stylesheets/railsjazz.sass */
+#contact_form .simple_form input[type='text'], #contact_form .simple_form input[type='email'], #contact_form .simple_form textarea {
   width: 300px;
+  background: #ec1b2f;
+  border: 1px solid #ec1b2f;
 }
