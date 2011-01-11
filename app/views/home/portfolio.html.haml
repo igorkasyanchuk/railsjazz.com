@@ -6,7 +6,7 @@
 #featured_projects_right
 #portfolio_list
   .left.w50
-    - Project.web_design.all.each do |project|
+    - Project.web_development.all.each do |project|
       .project_frame.project_frame0
         = link_to (image_tag project.portfolio_image.url), project
         .project_description
@@ -15,7 +15,7 @@
           = link_to 'More Details >', project, :class => 'more_details'
 
   .right.w50
-    - Project.web_development.all.each do |project|
+    - Project.web_design.all.each do |project|
       .project_frame
         = link_to (image_tag project.portfolio_image.url), project
         .project_description
