@@ -7,6 +7,10 @@
 
 %p
   = link_to 'Public View', @project, :target => "_blank"
+  |
+  = link_to "View All Projects", [:admin, :projects], :class => 'index_button'
+  |
+  = link_to "Screenshots(#{@project.screenshots.count})", [:admin, @project, :screenshots], :class => 'index_button'
 
 %p
   = @project.featured ? "Featured" : "Normal"

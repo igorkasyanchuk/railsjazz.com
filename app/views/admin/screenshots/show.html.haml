@@ -6,6 +6,9 @@
 .clear
 
 %p
+  = link_to "View All Project Sreenshots", [:admin, @project, :screenshots], :class => 'index_button'  
+
+%p
   = @screenshot.description
   %br
   = image_tag @screenshot.image.url
