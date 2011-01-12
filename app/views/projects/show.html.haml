@@ -16,7 +16,7 @@
         = simple_format @project.description
         = image_tag @project.image.url
         
-      - @project.screenshots.each do |screenshot|
+      - @project.screenshots.by_priority.each do |screenshot|
         %p
           = simple_format screenshot.description
           = image_tag screenshot.image.url

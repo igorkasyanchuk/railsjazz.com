@@ -1,6 +1,7 @@
 = error_messages_for :screenshot
 
 = simple_form_for([:admin, @project, @screenshot], :html => { :multipart => true }) do |f|
+  = f.input :priority
   = f.input :description, :input_html => {:rows => 20, :cols => 80}
   = f.input :image, :label => "Full-size Image"
   = f.submit f.object.new_record? ? 'Create' : "Update"

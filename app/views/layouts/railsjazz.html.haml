@@ -11,6 +11,8 @@
     = stylesheet_link_tag 'railsjazz', 'footer'
     <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
     <link type="image/x-icon" rel="icon" href="/favicon.ico" />
+    - if Rails.env == 'production'
+      = render :partial => '/shared/ga'    
   %body
     #wrap
       #main

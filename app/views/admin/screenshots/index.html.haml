@@ -11,10 +11,12 @@
   
   %table.zebra
     %tr
+      %th Priority
       %th Description
       %th Actions
     - @screenshots.each do |screenshot|
       %tr{ :class => cycle(:odd, :even)}
+        %td= screenshot.priority
         %td= screenshot.description
         %td
           = link_to 'show', [:admin, @project, screenshot], :class => 'show_button'

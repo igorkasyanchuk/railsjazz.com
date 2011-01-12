@@ -41,6 +41,9 @@
   %strong Portfolio Image
   %br
   = image_tag @project.portfolio_image.url  
+  
+%p
+  Priority: #{@project.priority}
 
 %p
   = link_to "View All Projects", [:admin, :projects], :class => 'index_button'

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110112122121) do
+ActiveRecord::Schema.define(:version => 20110112122122) do
 
   create_table "contacts", :force => true do |t|
     t.string    "name"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(:version => 20110112122121) do
     t.integer   "image_file_size"
     t.timestamp "image_updated_at"
     t.text      "description"
+    t.integer   "priority",           :default => -1
   end
 
   add_index "screenshots", ["project_id"], :name => "index_screenshots_on_project_id"
