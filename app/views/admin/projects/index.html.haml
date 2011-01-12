@@ -9,12 +9,14 @@
     %th Name
     %th Category
     %th Featured
+    %th Priority
     %th Actions
-  - @projects.each do |project|
+  - @projects.by_priority.each do |project|
     %tr{ :class => cycle(:odd, :even)}
       %td= project.title
       %td= project.project_category.name
       %td= project.featured ? "Featured" : "Normal"
+      %td= project.priority
       %td
         = link_to 'show', [:admin, project], :class => 'show_button'
         = link_to 'edit', [:edit, :admin, project], :class => 'edit_button'

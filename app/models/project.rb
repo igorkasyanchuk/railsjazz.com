@@ -14,6 +14,7 @@ class Project < ActiveRecord::Base
   scope :web_design, where(:project_category_id => ProjectCategory.find_by_name("Web Design").id)
   scope :web_development, where(:project_category_id => ProjectCategory.find_by_name("Web Development").id)
   scope :latest, order('completed_on desc').limit(5)
+  scope :by_priority, order('priority desc')
 
   has_attached_file :image, 
                     :storage => :s3,

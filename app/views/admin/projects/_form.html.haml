@@ -2,6 +2,7 @@
 
 = simple_form_for([:admin, @project], :html => { :multipart => true }) do |f|
   = f.input :title
+  = f.input :priority
   = f.input :summary
   = f.input :url
   = f.input :description, :input_html => {:rows => 20, :cols => 80}
