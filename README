@@ -2,9 +2,18 @@
 
 I think this project could be good sample of usage Rails 3 with HAML/SASS on Heroku.
 
-Main technologies: Rails 3.0.3, HAML/SASS, Paperclip.
+Main technologies: Rails 3.0.3, HAML/SASS, Paperclip, Inherited Resources.
 
-+++++++++++++++++++++++++++++++++++
+Please note that you need to set ENV variables
+
+S3_KEY              => amazon_s3_key
+S3_SECRET           => amazon_s3_secret
+USER_NAME           => login_to_admin
+USER_PASSWORD       => password_to_admin
+
+Next you can login to admin section on http://localhost:3000/admin.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 If you have any questions, or you need some help please feel free to ask me here: http://railsjazz.com/contacts/new.
 
